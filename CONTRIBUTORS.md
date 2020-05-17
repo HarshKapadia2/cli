@@ -6,6 +6,7 @@ These are the amazing people who have contributed to this project!
 
 ## Contributors
 
+- KartikSoneji (Kartik Soneji, kartiksoneji@rocketmail.com)
 - Add your names here!
 
 ## Author
