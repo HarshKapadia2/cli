@@ -11,6 +11,6 @@
 - Please check for duplication before adding information.
 - Add appropriate headings under which the commands come, if they do not already exist.
 - Commit message format can be found [here](https://harshkapadia2.github.io/git_basics/#_git_commit).
-   - :books: docs `:books: docs:` for additions.
+   - :books: docs: `:books: docs:` for additions.
    - :sparkles: docs: `:sparkles: docs:` for new files.
    - :bug: fix: `:bug: fix:` for typos, changes and other mistakes.
