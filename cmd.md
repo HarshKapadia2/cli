@@ -127,8 +127,8 @@ OR
 - To redirect the output of a command to a file, use the `>` symbol.
   Eg: `dir > files.txt` will save the output of the `dir` command to a file named `files.txt`.  
   Note that if `files.txt` already had some data, then this will **overwrite** the old data.
-- To append to a file, use the `>>` symbol.
-  Eg: `dir >> files.txt` will append the output the `dir` command to a file named `files.txt`.  
+- To write to an existing file, use the `>>` symbol.
+  Eg: `dir >> files.txt` will append the output of the `dir` command to a file named `files.txt`.  
   You can check this by running the command twice, and then viewing the contents of the file with `more files.txt`.
 - You can use this to create a file with some content with `echo "Hello, world" > hello.txt`.
 
