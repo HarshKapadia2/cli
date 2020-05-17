@@ -2,7 +2,7 @@
 
 These are the amazing people who have contributed to this project!
 
-**Add your comma-separated name and e-mail in parantheses after your GitHub ID!**
+**Add your comma-separated name and e-mail in parentheses after your GitHub ID!**
 
 ## Contributors
 
