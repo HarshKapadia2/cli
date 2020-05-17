@@ -188,6 +188,6 @@ OR
 - You can chain multiple commands using `&`, `&&` and `||`.
 - `command_1 & command_2` will run `command_1` and then run `command_2`.
 - `command_1 && command_2` will run `command_1` and then run `command_2` only if `command_1` finished successfully.
-- `command_1 && command_2` will run `command_1` and then run `command_2` only if `command_1` **did not** finish successfully.
+- `command_1 || command_2` will run `command_1` and then run `command_2` only if `command_1` **did not** finish successfully.
 - Running `echo ^G` (Typed as `echo `, then <kbd>Ctrl</kbd> + <kbd>G</kbd>) will cause a beep sound.
 - A useful trick is to add `& echo ^G` after a command that you know will take a long time to complete. You can go do something else and this will alert you when the command finishes.
