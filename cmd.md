@@ -1,8 +1,5 @@
 # Windows Command Prompt (cmd)
 
-- Source
-   - [thenewboston on YouTube](https://www.youtube.com/watch?v=MBBWVgE0ewk&list=PL6gx4Cwl9DGDV6SnbINlVUd0o2xT4JbMu&index=1)
-   - My knowledge
 - **Shorthands**
    - cmd = Windows Command Prompt
    - cwd = current working directory
