@@ -20,3 +20,8 @@ Commands and keyboard shortcuts for Command Prompt (cmd), PowerShell & Terminal 
 ## Code of conduct
 
 - Have a look at the [code of conduct](CODE_OF_CONDUCT.md) that governs this repo.
+
+## Misc
+
+- [WSL](https://gist.github.com/HarshKapadia2/714bba15f0f09d32c07cdde3c244be9f)
+- [Windows Terminal](https://gist.github.com/HarshKapadia2/18daf23ab4a7d1cb9215ca9dc8b7099f)
