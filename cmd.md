@@ -82,6 +82,7 @@ OR
 - To list all files of a certain extension `dir *.ext`.
 - Listing all available drives `wmic logicaldisk get name`.
 - `tree` to view directory structure. `tree /f` to view files as well as directories.
+- `tree /f /a > file_name.txt` to output the tree (file structure) to a file (`file_name.txt`).
 
 ## Creating directories
 
