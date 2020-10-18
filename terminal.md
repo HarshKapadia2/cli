@@ -14,25 +14,23 @@
 
 ## Opening the Terminal
 
-  
-
-- Press <kbd>Win</kbd>
-
-- Type in `terminal` and press enter
-
-  
-
-OR
-
- 
-
-- Press <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>T</kbd> (For Ubuntu and Linux Mint).
-
-### Windows users
-The WSL(Windows Subsystem for Linux) is a good alternative that lets developers run a GNU/Linux environment -- including most command-line tools, utilities, and applications -- directly on Windows, unmodified, without the overhead of a traditional virtual machine or dualboot setup. 
-<br>
-[Learn More](https://docs.microsoft.com/en-us/windows/wsl/) | [Install WSL](https://docs.microsoft.com/en-us/windows/wsl/install-win10)
-  
+### Linux
+Search for "terminal" in the apps menu in most cases. You might have to look up specific instructions for your distro.
+Default Keyboard shortcut: <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>T</kbd>
+### MacOS
+Search for "terminal" in Spotlight.
+Keyboard shortcut: <kbd>Control</kbd> + <kbd>Option</kbd> + <kbd>Shift</kbd> + <kbd>T</kbd>
+### Windows
+The in-built terminals on Windows (cmd and PowerShell) are not POSIX compliant, so you will need to do one of the following:
+- Install a POSIX-compatible runtime like MinGW or Cygwin.  
+  Note that `git-for-windows` includes a MinGW installation called `git-bash` by default, and is usually located in `C:\Program Files\Git\git-bash.exe`
+- Enable the Windows Subsystem for Linux (WSL).
+  WSL is a system developed by Microsoft that allows a full Linux OS to run alongside Windows.  
+  [Learn More about WSL](https://docs.microsoft.com/en-us/windows/wsl/) | [Install WSL](https://docs.microsoft.com/en-us/windows/wsl/install-win10)
+- Use Docker containers.
+  Docker allows programs to run in isolated environments called containers.
+  Each container is like a fresh install of the respective OS. There are pre-built containers for many popular Linux distros like Ubuntu, Debian, CentOS, etc.
+  [Get started with Docker](https://www.docker.com/get-started)
   
 
 ## Keyboard shortcuts
