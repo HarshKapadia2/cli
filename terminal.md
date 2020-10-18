@@ -47,7 +47,7 @@ The in-built terminals on Windows (cmd and PowerShell) are not POSIX compliant, 
 | <kbd>Ctrl</kbd> + <kbd>C</kbd> | Stop running processes in your terminal and bring back the prompt |
 
 ## File System
-lets get a brief on Linux file system. If you've used Windows, you would be familiar with 	`C:`  `D:` etc.  
+Let's get a brief on Linux file system. If you've used Windows, you would be familiar with 	`C:`,  `D:` etc.  
 In Linux, directory structure starts with `/` symbol, which is referred as the `root` directory
 The `~`(tilde) is shorthand for your `home` directory.  Within your home directory, you will find common directories, such as Documents, Music, Video, etc.,
 
@@ -55,7 +55,7 @@ The `~`(tilde) is shorthand for your `home` directory.  Within your home directo
 
 
 ### Absolute and Relative Paths
-An  **absolute or full path**  points to the same location in a file system regardless of the current working directory. To do that, it must contain the root directory.
+An  **absolute or full path**  points to the same location in a file system regardless of the current working directory. To do that, it must start from the root directory.
 >`/home/username` is an absolute path.
 
 By contrast, a  **relative path**  starts from some given working directory, avoiding the need to provide the full absolute path. A filename can be considered as a relative path based at the current working directory. If the working directory is not the file's parent directory, a file not found error will result if the file is addressed by its name.
