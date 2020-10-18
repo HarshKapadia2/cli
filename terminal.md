@@ -224,7 +224,7 @@ $ pwd
 	└── report.log
 	2 directories, 5 files
 	```
-## Changing Permissions
+## <a name="chmod"></a> Changing Permissions
 - In the output of  `ls -l`  command, the first 10 characters displayed are related to type of file and its permissions.
 	 ```bash
 		$ ls -l
