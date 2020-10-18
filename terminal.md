@@ -3,16 +3,16 @@
 
  **Table of Contents**
 
-* [Opening the Terminal](#open-terminal)
+* [Opening the Terminal](#opening-the-terminal)
 * [Keyboard Shortcuts](#keyboard-shortcuts)
 * [File System](#file-system)
 	* [Absolute and Relative paths](#absolute-and-relative-paths)
-* [Basics of Linux/Unix Commands](#command-basics)
+* [Basics of Linux/Unix Commands](#basics-of-linuxunix-commands)
 	* [Command Structure](#command-structure)
 	* [Command Help](#command-help)
-* [List of Commands](#command-list)
+* [List of Commands](#list-of-commands)
 
-## <a name="open-terminal"></a> Opening the Terminal
+## Opening the Terminal
 
   
 
@@ -35,21 +35,20 @@ The WSL(Windows Subsystem for Linux) is a good alternative that lets developers 
   
   
 
-## <a name="keyboard-shortcuts"></a> Keyboard shortcuts
+## Keyboard shortcuts
+| Shortcut | Function |
+|-|-|
+| <kbd>Tab</kbd> | Complete file & directory names and to further iterate over files |
+| <kbd>Shift</kbd> + <kbd>Tab</kbd> | Go back to the previous names |
+| <kbd>&#8593;</kbd> or <kbd>Ctrl</kbd> + <kbd>P</kbd> | Go to all the commands previously executed in that instance of the cmd, one by one |
+| <kbd>&#8595;</kbd> or <kbd>Ctrl</kbd> + <kbd>N</kbd> | Go towards the recent commands |
+| <kbd>Ctrl</kbd> + <kbd>R</kbd> | Search your command history |
+| <kbd>Ctrl</kbd> + <kbd>&#8592;</kbd>/<kbd>&#8594;</kbd> | Jump words |
+| <kbd>Home</kbd> or <kbd>Ctrl</kbd> | Jump to the beginning and end of the line |
+| <kbd>End</kbd> or <kbd>Ctrl</kbd> + <kbd>E</kbd> | Jump to the end of the line |
+| <kbd>Ctrl</kbd> + <kbd>C</kbd> | Stop running processes in your terminal and bring back the prompt |
 
-  
-
-- Use <b><kbd>Tab</kbd></b> to complete file & directory names and to further iterate over files. This can be done after partially typing out the name as well. 
-- Use <b><kbd>Shift</kbd> + <kbd>Tab</kbd></b> to go back to the previous names.
-- <b><kbd>&#8593;</kbd></b> or <b><kbd>Ctrl</kbd> + <kbd>P</kbd></b> to go to all the commands previously executed in that instance of the cmd, one by one. 
-- Similarly, <b><kbd>&#8595;</kbd></b> or <b><kbd>Ctrl</kbd> + <kbd>N</kbd></b>can be used to go towards the recent commands.
-- <b><kbd>Ctrl</kbd> + <kbd>R</kbd></b>
-- <b><kbd>Ctrl</kbd> + <kbd>&#8592;</kbd>/<kbd>&#8594;</kbd></b> to jump words.
-- <b><kbd>Home</kbd></b> or <b><kbd>Ctrl</kbd> + <kbd>A</kbd></b> to jump to the beginning and end of the line.
-- <b><kbd>End</kbd></b> or <b><kbd>Ctrl</kbd> + <kbd>E</kbd></b> keys to jump to the end of the line.
--  <b><kbd>Ctrl</kbd> + <kbd>C</kbd></b> will stop running processes (like Node.js servers, etc) in your terminal and bring back the prompt (the cwd text on the command line).
-
-## <a name="file-system"></a> File System
+## File System
 lets get a brief on Linux file system. If you've used Windows, you would be familiar with 	`C:`  `D:` etc.  
 In Linux, directory structure starts with `/` symbol, which is referred as the `root` directory
 The `~`(tilde) is shorthand for your `home` directory.  Within your home directory, you will find common directories, such as Documents, Music, Video, etc.,
@@ -57,20 +56,20 @@ The `~`(tilde) is shorthand for your `home` directory.  Within your home directo
 <p align="center"><img src="https://www.informit.com/content/images/chap04_9780133017601/elementLinks/thfig04-09.jpg" style="max-width:40%"></p>
 
 
-### <a name="absolute-and-relative-paths"></a> Absolute and Relative Paths
+### Absolute and Relative Paths
 An  **absolute or full path**  points to the same location in a file system regardless of the current working directory. To do that, it must contain the root directory.
 >`/home/username` is an absolute path.
 
 By contrast, a  **relative path**  starts from some given working directory, avoiding the need to provide the full absolute path. A filename can be considered as a relative path based at the current working directory. If the working directory is not the file's parent directory, a file not found error will result if the file is addressed by its name.
 >`../docs` is a relative path
 
-## <a name="command-basics"></a> Basics of Linux/Unix Commands
+## Basics of Linux/Unix Commands
 
-### <a name="command-structure"></a> Command Structure
+### Command Structure
 The components of the command line are:
--   the command
--   any options required by the command
--   the command's arguments (if required)
+- the command
+- any options required by the command
+- the command's arguments (if required)
 
 The general form of a UNIX command is:
 **command [-option(s)] [argument(s)]**
@@ -87,8 +86,8 @@ man pwd
 #command with option and argument
 rm -r project
 ```
-### <a name="command-help"></a> Command Help
--  `man <command>` is used to display the user manual of any command that we can run on the terminal. It provides a detailed view of the command. eg: `man ls`.
+### Command Help
+- `man <command>` is used to display the user manual of any command that we can run on the terminal. It provides a detailed view of the command. eg: `man ls`.
 - `help` command provides documentation for builtin commands. 
 ```bash
 $ help pwd
@@ -105,7 +104,7 @@ pwd: pwd [-LP]
    Returns 0 unless an invalid option is given or the current directory
    cannot be read.
 ```
-## <a name="command-list"></a> List of Commands
+## List of Commands
   
 ### Print name of cwd (current working directory)
 Use `pwd` to print name of current/working directory
@@ -135,10 +134,10 @@ $ cd -
 $ pwd
 /home/username
 ```
--   Relative paths are well, relative to current working directory
--   `.`  refers to current directory
--   `..`  refers to directory one hierarchy above
--   `../..`  refers to directory two hierarchies above and so on
+- Relative paths are well, relative to current working directory
+- `.`  refers to current directory
+- `..`  refers to directory one hierarchy above
+- `../..`  refers to directory two hierarchies above and so on
 	```bash
 	$ pwd
 	/home/username
@@ -159,7 +158,7 @@ $ pwd
 	$ pwd
 	/
 	```
--   `cd ~/`  or  `cd ~`  or  `cd`  will go to directory specified by  `HOME`  shell variable (which is usually set to user's home directory)
+- `cd ~/`  or  `cd ~`  or  `cd`  will go to directory specified by  `HOME`  shell variable (which is usually set to user's home directory)
 	```bash
 	$ pwd
 	/
@@ -170,7 +169,7 @@ $ pwd
 	$ pwd
 	/home/username
 	```
--   _Note:_ Specifying  `/`  at end of path argument is optional
+- _Note:_ Specifying  `/`  at end of path argument is optional
 
 ## Run files on cmd
 
@@ -186,13 +185,13 @@ $ pwd
 
   
 
--  `ls` to list all files and directories in the cwd (current working directory).
+- `ls` to list all files and directories in the cwd (current working directory).
 	```bash 
 	$ ls
 	projects    report.log
 	```
 
--  `ls path` to view files in another directory without changing the cwd. The path can be absolute/relative.
+- `ls path` to view files in another directory without changing the cwd. The path can be absolute/relative.
 	```bash
 	$ ls /var/
 	backups  lib    lock   mail
@@ -206,7 +205,7 @@ $ pwd
 	-rw-rw-r-- 1 username eg 39120 Feb 14  2019 report.log
 	```
 
--  `tree` to view directory structure. 
+- `tree` to view directory structure. 
 
 - It is not part of a standard Linux distribution, so you will need to install it.
 	```bash
@@ -224,7 +223,7 @@ $ pwd
 	└── report.log
 	2 directories, 5 files
 	```
-## <a name="chmod"></a> Changing Permissions
+## Changing Permissions
 - In the output of  `ls -l`  command, the first 10 characters displayed are related to type of file and its permissions.
 	 ```bash
 		$ ls -l
@@ -235,16 +234,16 @@ $ pwd
 
 First character indicates the  **file type**  The most common are
 
--   `-`  regular file
--   `d`  directory
--   `l`  symbolic link
--   for complete list, see  `-l`  option in  `info ls`
+- `-`  regular file
+- `d`  directory
+- `l`  symbolic link
+- for complete list, see  `-l`  option in  `info ls`
 
 The other 9 characters represent three sets of  **file permissions**  for 'user', 'group' and 'others' - in that order
 
--   `user`  file properties for owner of file -  `u`
--   `group`  file properties for the group the file belongs to -  `g`
--   `others`  file properties for everyone else -  `o`
+- `user`  file properties for owner of file G -  `u`
+- `group`  file properties for the group the file belongs to -  `g`
+- `others`  file properties for everyone else -  `o`
 
   **Permission characters and values**
   
@@ -266,7 +265,7 @@ This means it will change the permission of sample.txt to rw-rw-r-- i.e, `user` 
 
   
 
--  `mkdir dir_name` will create a folder in the cwd, if the `dir_name` doesn't already exist in the cwd.
+- `mkdir dir_name` will create a folder in the cwd, if the `dir_name` doesn't already exist in the cwd.
 - Use `""` if the `dir_name` has spaces, eg: `mkdir "dir name"`.
 
 - Multiple folders can be created using `mkdir {dir1,dir2,dir3}`.
@@ -411,8 +410,8 @@ Eg: `ls -al >> listings.txt` will append the output of command ls -al is re-dire
 
 ## Copying and moving files
 - The `cp` command is used to copy files and directories
--   To copy a single file or directory, specify the source as first argument and destination as second argument
--   Similar to  `rm`  command, use  `-r`  for directories
+- To copy a single file or directory, specify the source as first argument and destination as second argument
+- Similar to  `rm`  command, use  `-r`  for directories
 	```bash
 	$ # Two file names
 	$ # cp src_file dest_file
@@ -437,7 +436,7 @@ Eg: `ls -al >> listings.txt` will append the output of command ls -al is re-dire
 	```
 
 ### `rename` command
--  `rename` command in Linux is used to rename the named files according to the regular expression _perlexpr_.
+- `rename` command in Linux is used to rename the named files according to the regular expression _perlexpr_.
 - It is not part of a standard Linux distribution, so you will need to install it.
 	```bash
 	$ # Install rename
@@ -455,7 +454,7 @@ Eg: `ls -al >> listings.txt` will append the output of command ls -al is re-dire
 
 ## Deleting files & directories
 
--  **This will permanently delete your files.** They will not be found in the 'Trash' folder.
+- **This will permanently delete your files.** They will not be found in the 'Trash' folder.
 
 - To delete files
 	```bash
