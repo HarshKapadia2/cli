@@ -47,7 +47,7 @@ The in-built terminals on Windows (cmd and PowerShell) are not POSIX compliant, 
 | <kbd>Ctrl</kbd> + <kbd>C</kbd> | Stop running processes in your terminal and bring back the prompt |
 
 ## File System
-Let's get a brief on Linux file system. If you've used Windows, you would be familiar with 	`C:`,  `D:` etc.  
+Let's get a brief on the Linux file system. If you've used Windows, you would be familiar with 	`C:`,  `D:` etc.  
 In Linux, directory structure starts with `/` symbol, which is referred as the `root` directory
 The `~`(tilde) is shorthand for your `home` directory.  Within your home directory, you will find common directories, such as Documents, Music, Video, etc.,
 
