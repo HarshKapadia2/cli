@@ -54,7 +54,7 @@ lets get a brief on Linux file system. If you've used Windows, you would be fami
 In Linux, directory structure starts with `/` symbol, which is referred as the `root` directory
 The `~`(tilde) is shorthand for your `home` directory.  Within your home directory, you will find common directories, such as Documents, Music, Video, etc.,
 
-<p align="center"><img src="https://www.informit.com/content/images/chap04_9780133017601/elementLinks/thfig04-09.jpg" width="80%"></p>
+<p align="center"><img src="https://www.informit.com/content/images/chap04_9780133017601/elementLinks/thfig04-09.jpg" style="max-width:40%"></p>
 
 
 ### <a name="absolute-and-relative-paths"></a> Absolute and Relative Paths
