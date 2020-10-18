@@ -7,7 +7,7 @@ Commands and keyboard shortcuts for Command Prompt (cmd), PowerShell & Terminal 
 ## Commands and keyboard shortcuts
 
 - [Windows Command Prompt (cmd)](cmd.md)
-- [Unix Terminal](terminal.md)
+- [Unix/Linux Terminal](terminal.md)
 - [PowerShell](powershell.md)
 
 ## Contributing

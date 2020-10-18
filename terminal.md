@@ -1,5 +1,5 @@
 
-# Unix/Linux Commands
+# Unix/Linux Terminal
 
  **Table of Contents**
 
