@@ -3,14 +3,14 @@
 
  **Table of Contents**
 
-* [Opening the Terminal](#opening-the-terminal)
-* [Keyboard Shortcuts](#keyboard-shortcuts)
-* [File System](#file-system)
-	* [Absolute and Relative paths](#absolute-and-relative-paths)
-* [Basics of Linux/Unix Commands](#basics-of-linuxunix-commands)
-	* [Command Structure](#command-structure)
-	* [Command Help](#command-help)
-* [List of Commands](#list-of-commands)
+- [Opening the Terminal](#opening-the-terminal)
+- [Keyboard Shortcuts](#keyboard-shortcuts)
+- [File System](#file-system)
+	- [Absolute and Relative paths](#absolute-and-relative-paths)
+- [Basics of Linux/Unix Commands](#basics-of-linuxunix-commands)
+	- [Command Structure](#command-structure)
+	- [Command Help](#command-help)
+- [List of Commands](#list-of-commands)
 
 ## Opening the Terminal
 
