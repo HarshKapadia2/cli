@@ -171,7 +171,7 @@ $ pwd
 
 ## Run files on cmd
 
- - You can only run files if you have the permission to execute them. Refer [Changing permissions section](#chmod) for more details.
+ - You can only run files if you have the permission to execute them. Refer [Changing permissions section](#changing-permissions) for more details.
 	 ```bash
 	 $ ./file_to_run
 	 ```
@@ -195,7 +195,7 @@ $ pwd
 	backups  lib    lock   mail
 	```
 
-- Use the `-l` option for the long listing format. This format shows details like file permissions, ownership, size, timestamp, etc. (See  [chmod](#chmod)  section for details on permissions, groups, etc)
+- Use the `-l` option for the long listing format. This format shows details like file permissions, ownership, size, timestamp, etc. (See  [changing permissions](#changing-permissions)  section for details on permissions, groups, etc)
 	```bash
 	$ ls -l
 	total 84
