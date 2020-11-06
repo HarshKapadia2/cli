@@ -55,6 +55,7 @@ The `~`(tilde) is shorthand for your `home` directory.  Within your home directo
 
 <p align="center"><img src="https://www.informit.com/content/images/chap04_9780133017601/elementLinks/thfig04-09.jpg" style="max-width:40%"></p>
 
+> [A Gist on the file system](https://gist.github.com/HarshKapadia2/18150e1e57eab1f0e500f18feea890aa) folders and their general functions.
 
 ### Absolute and Relative Paths
 An  **absolute or full path**  points to the same location in a file system regardless of the current working directory. To do that, it must start from the root directory.
