@@ -9,6 +9,7 @@ Commands and keyboard shortcuts for Command Prompt (cmd), PowerShell & Terminal 
 - [Windows Command Prompt (cmd)](cmd.md)
 - [Unix/Linux Terminal](terminal.md)
 - [PowerShell](powershell.md)
+- [Shell Scripting](shell_scripting.sh)
 
 ## Contributing
 
