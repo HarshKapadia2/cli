@@ -6,11 +6,20 @@
 - [Opening the Terminal](#opening-the-terminal)
 - [Keyboard Shortcuts](#keyboard-shortcuts)
 - [File System](#file-system)
-  - [Absolute and Relative paths](#absolute-and-relative-paths)
 - [Basics of Linux/Unix Commands](#basics-of-linuxunix-commands)
-  - [Command Structure](#command-structure)
-  - [Command Help](#command-help)
-- [List of Commands](#list-of-commands)
+- [Basic Commands](#basic-commands)
+- [Run files on cmd](#run-files-on-cmd)
+- [Listing directory contents & directory structure](#listing-directory-contents--directory-structure)
+- [Changing Permissions](#changing-permissions)
+- [Creating Directories](#creating-directories)
+- [Creating Files](#creating-files)
+- [Redirecting Output](#redirecting-output)
+- [Editing a File](#editing-a-file)
+- [Reading File Content](#reading-file-content)
+- [Copying and Moving Files](#copying-and-moving-files)
+- [Renaming Files](#renaming-files)
+- [Deleting Files and Directories](#deleting-files--directories)
+- [Chaining Commands](#chaining-commands)
 
 ## Opening the Terminal
 
@@ -105,7 +114,7 @@ pwd: pwd [-LP]
   Returns 0 unless an invalid option is given or the current directory
   cannot be read.
 ```
-## List of Commands
+## Basic Commands
   
 ### Print name of cwd (current working directory)
 Use `pwd` to print name of current/working directory
