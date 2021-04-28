@@ -198,12 +198,24 @@ $ pwd
   backups  lib  lock  mail
   ```
 
+- Use the `-a` option to list all the files, including the hidden files and folders, in the cwd (current working directory).
+  ```bash
+  $ ls
+  CODE_OF_CONDUCT.md  CONTRIBUTING.md  LICENSE  README.md  build  build.sh  src  temp.md
+
+  $ ls -a
+  .  ..  .git  .github  .gitignore  CODE_OF_CONDUCT.md  CONTRIBUTING.md  LICENSE  README.md  build  build.sh  src  temp.md
+  ```
+
 - Use the `-l` option for the long listing format. This format shows details like file permissions, ownership, size, timestamp, etc. (See  [changing permissions](#changing-permissions)  section for details on permissions, groups, etc)
   ```bash
   $ ls -l
-  total 84
-  lrwxrwxrwx 1 username eg  12 Mar 21 12:08 projects -> ../projects/
-  -rw-rw-r-- 1 username eg 39120 Feb 14  2019 report.log
+  total 52
+  -rwxrwxrwx 1 harshkapadia harshkapadia  3431 Apr 21 23:09 CODE_OF_CONDUCT.md
+  -rwxrwxrwx 1 harshkapadia harshkapadia 20566 Apr 21 23:09 LICENSE
+  -rwxrwxrwx 1 harshkapadia harshkapadia  1253 Apr 21 23:09 README.md
+  drwxrwxrwx 1 harshkapadia harshkapadia  4096 Apr 22 00:48 build
+  ...
   ```
 
 - `tree` to view directory structure. 
