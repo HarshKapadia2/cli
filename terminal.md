@@ -42,7 +42,6 @@ The in-built terminals on Windows (cmd and PowerShell) are not POSIX compliant, 
   Each container is like a fresh install of the respective OS. There are pre-built containers for many popular Linux distros like Ubuntu, Debian, CentOS, etc.
   <br>
   [Get started with Docker](https://www.docker.com/get-started)
-  
 
 ## Keyboard shortcuts
 | Shortcut | Function |
@@ -124,7 +123,8 @@ $ pwd
 ```
 
 ### Clear screen & command history
-Use `clear` or <kbd>Ctrl</kbd> + <kbd>L</kbd> to clear the screen of the cmd.
+- Use `clear` or <kbd>Ctrl</kbd> + <kbd>L</kbd> to clear the screen of the cmd.
+- Use `history` to view the last 500 commands executed on the terminal.
   
 
 ### Changing directories
@@ -187,14 +187,8 @@ $ pwd
   ```bash
   $ ./file_to_run
   ```
-  
-
-
 
 ## Listing directory contents & directory structure
-
-  
-
 - `ls` to list all files and directories in the cwd (current working directory).
   ```bash 
   $ ls
@@ -245,6 +239,13 @@ $ pwd
   └── report.log
   2 directories, 5 files
   ```
+  
+  - Use `which` to find the location of a file.
+  ```bash
+  $ which bash
+  /usr/bin/bash
+  ```
+  
 ## Changing Permissions
 - In the output of  `ls -l`  command, the first 10 characters displayed are related to type of file and its permissions.
   ```bash
