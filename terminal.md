@@ -8,6 +8,7 @@
 - [File System](#file-system)
 - [Basics of Linux/Unix Commands](#basics-of-linuxunix-commands)
 - [Basic Commands](#basic-commands)
+- [Package Manager](#package-manager)
 - [Run files on cmd](#run-files-on-cmd)
 - [Listing directory contents & directory structure](#listing-directory-contents--directory-structure)
 - [Changing Permissions](#changing-permissions)
@@ -180,6 +181,37 @@ $ pwd
   /home/username
   ```
 - _Note:_ Specifying  `/`  at end of path argument is optional
+
+## Package manager
+
+- A package delivers and maintains new software for Linux-based computers. Just as Windows-based computers rely on executable installers, the Linux ecosystem depends on packages that are administered through software repositories.
+- Different Linux distros use different package managers. Ubuntu uses APT (Advanced Package Tool) to manage its packages.
+
+### Check for package updates
+
+```bash
+$ # To check if any packages on the system have updates
+$ sudo apt-get update
+
+$ # To update all packages
+$ sudo apt-get upgrade
+```
+
+NOTE: Always run the update command before the upgrade command.
+
+### Install a package
+
+```bash
+$ sudo apt-get install <package_name>
+$ # This might prompt you with a Y (yes) or n (no) option.
+```
+
+### Remove a package
+
+```bash
+$ sudo apt-get remove <package_name>
+$ # This might prompt you with a Y (yes) or n (no) option.
+```
 
 ## Run files on cmd
 
