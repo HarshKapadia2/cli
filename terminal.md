@@ -21,6 +21,7 @@
 - [Renaming Files](#renaming-files)
 - [Deleting Files and Directories](#deleting-files--directories)
 - [Chaining Commands](#chaining-commands)
+- [Finding Strings and Counting Occurences](#finding-strings-and-counting-occurences)
 
 ## Opening the Terminal
 
@@ -557,3 +558,253 @@ $ command1 || command2
 $ command1 ; command2
 ```
 - This will run will run command_1 and then run command_2 even if command_1 did not finish successfully.
+
+## Finding Strings and Counting Occurences
+
+### `grep`
+
+- [Origin of `grep`](https://www.youtube.com/watch?v=NTfOnGZUZDk)
+
+- To find the occurence of a string, use `grep "<string>" file_name.ext`
+  ```bash
+  $ grep "current" bank.lst
+  101 Aditya 0 14/11/2000 current
+                          ^^^^^^^
+  103 Naman0 20/08/2009 current
+                        ^^^^^^^
+  ```
+
+- To count the occurence(s) of a string, use `grep -c "<string>" file_name.ext`
+  ```bash
+  $ grep -c "current" bank.lst
+  2
+  ```
+  
+- To find the occurence(s) of a string with the line number, use `grep -n "<string>" file_name.ext`
+  ```bash
+  $ grep -n "current" bank.lst
+  1:101 Aditya 0 14/11/2000 current
+                            ^^^^^^^
+  3:103 Naman0 20/08/2009 current
+                          ^^^^^^^
+  ```
+
+- To find the occurence(s) of a line without the string, use `grep -v "<string>" file_name.ext`
+  ```bash
+  $ grep -v "current" bank.lst
+  108 Chirag 0 15/12/2012 Current
+  109 Arya 16000 14/12/2010 Current
+  110 Priya 130 16/11/2009 Saving
+  ```
+
+- To find files with the occurence of a string, use `grep -l "<string>" *.ext`
+  ```bash
+  $ grep -l "current" *.lst
+  bank.lst
+  customers.lst
+  ```
+
+- To find files without the occurence of a string, use `grep -L "<string>" *.ext`
+  ```bash
+  $ grep -L "current" *.java
+  bnk.java
+  cust.java
+  ```
+
+- To find lines from different files with a string (including the file names), use `grep -H "<string>" *.ext`
+  ```bash
+  $ grep -H "current" *.lst
+  bank.lst:101 Aditya 0 14/11/2000 current
+                                   ^^^^^^^
+  bank.lst:103 Naman0 20/08/2009 current
+                                 ^^^^^^^
+  clist.lst:101 Aditya 0 14/11/2000 current
+                                    ^^^^^^^
+  clist.lst:103 Naman0 20/08/2009 current
+                                  ^^^^^^^
+  newbank.lst:101 Aditya 0 14/11/2000 current
+                                      ^^^^^^^
+  newbank.lst:103 Naman0 20/08/2009 current
+                                    ^^^^^^^
+  ```
+  
+  - To find lines from different files with a string (without including the file names), use `grep -h "<string>" *.ext`
+  ```bash
+  $ grep -h "current" *.lst
+  101 Aditya 0 14/11/2000 current
+                          ^^^^^^^
+  103 Naman0 20/08/2009 current
+                        ^^^^^^^
+  101 Aditya 0 14/11/2000 current
+                          ^^^^^^^
+  103 Naman0 20/08/2009 current
+                        ^^^^^^^
+  101 Aditya 0 14/11/2000 current
+                          ^^^^^^^
+  103 Naman0 20/08/2009 current
+                        ^^^^^^^
+  ```
+
+- To find the occurence of a string while ignoring the case, use `grep -i "<string>" file_name.ext`
+  ```bash
+  $ grep -i "current" bank.lst
+  101 Aditya 0 14/11/2000 current
+                          ^^^^^^^
+  103 Naman0 20/08/2009 current
+                        ^^^^^^^
+  106 Mukesh 14000 20/12/2009 Current
+                              ^^^^^^^
+  108 Chirag 0 15/12/2012 Current
+                          ^^^^^^^
+  ```
+
+- To find the occurence of strings, use `grep -e "<string_1>" -e "<string_2>" -e "<string_3>"... file_name.ext` (Can be used to ignore case as well, by entering all the allowed strings.)
+  ```bash
+  $ grep -e "current" -e "Mu" bank.lst
+  101 Aditya 0 14/11/2000 current
+                          ^^^^^^^
+  103 Naman0 20/08/2009 current
+                        ^^^^^^^
+  106 Mukesh 14000 20/12/2009 Current
+      ^^
+  ```
+
+- To find all lines with a string ignoring the case of a few characters, use:
+  ```bash
+  $ grep "[Cc]urrent" bank.lst
+  101 Aditya 0 14/11/2000 current
+                          ^^^^^^^
+  103 Naman0 20/08/2009 current
+                        ^^^^^^^
+  106 Mukesh 14000 20/12/2009 Current
+                              ^^^^^^^
+  108 Chirag 0 15/12/2012 Current
+                          ^^^^^^^
+  109 Arya 16000 14/12/2010 Current
+                            ^^^^^^^
+  ```
+
+- To find a number of lines before and after a string, use `grep -<number> "<string>" file_name.ext`
+  ```bash
+  $ grep -1 "current" bank.lst
+  101 Aditya 0 14/11/2000 current # The line above this is not printed as this is itself the first line in the file
+                          ^^^^^^^
+  102 Anil 10000 20/05/2011 saving
+  103 Naman0 20/08/2009 current
+                        ^^^^^^^
+  104 Ram 10000 15/08/2010 saving
+  ```
+
+- To find all lines starting with a string, use `grep "^<string>" file_name.ext`
+  ```bash
+  $ grep "^11" bank.lst
+  110 Priya 130 16/11/2009 Saving
+  ^^
+  ```
+
+- To find all lines starting within a string range, use `grep "^[<string>-<string>]" file_name.ext`
+  ```bash
+  $ grep "^[1-2]" bank.lst
+  101 Aditya 0 14/11/2000 current
+  ^
+  ...
+  
+  110 Priya 130 16/11/2009 Saving
+  ^
+  201 Bina 3000 11/03/2010 saving
+  ^
+  202 Diya 4000 13/04/2018 saving
+  ^
+  203 Gargi 2000 21/01/2015 saving
+  ^
+  ```
+
+- To find all lines not starting with a string, use `grep ^[^<string>] <file_name.ext>` (The outer `^` is negating the pattern.)
+  ```bash
+  $ grep "^[^1]" bank.lst
+  201 Bina 3000 11/03/2010 saving
+  ^
+  202 Diya 4000 13/04/2018 saving
+  ^
+  203 Gargi 2000 21/01/2015 saving
+  ^
+  ```
+
+- To find all lines not starting with a string in a range of characters, use `grep ^[^<string>-<string>] <file_name.ext>` (The outer `^` is negating the pattern.)
+  ```bash
+  $ grep "^[^0-1]" bank.lst
+  201 Bina 3000 11/03/2010 saving
+  ^
+  202 Diya 4000 13/04/2018 saving
+  ^
+  203 Gargi 2000 21/01/2015 saving
+  ^
+  ```
+
+- To find all lines ending with a string, use `grep "<string>$" file_name.ext`
+  ```bash
+  $ grep "nt$" bank.lst
+  101 Aditya 0 14/11/2000 current
+                               ^^
+  103 Naman0 20/08/2009 current
+                             ^^
+  106 Mukesh 14000 20/12/2009 Current
+                                   ^^
+  108 Chirag 0 15/12/2012 Current
+                               ^^
+  109 Arya 16000 14/12/2010 Current
+                                 ^^
+  ```
+
+- To find all lines starting or ending with a string **anywhere in the line** and having a fixed number of characters after or before it respectively, use `grep "...<string>" file_name.ext` or `grep "<string>..." file_name.ext` (Every `.` indicates one character.)
+  ```bash
+  $ grep "......nt" bank.lst
+  101 Aditya 0 14/11/2000 current
+                          ^^^^^^^
+  103 Naman0 20/08/2009 current
+                        ^^^^^^^
+  106 Mukesh 14000 20/12/2009 Current
+                              ^^^^^^^
+  108 Chirag 0 15/12/2012 Current
+                          ^^^^^^^
+  109 Arya 16000 14/12/2010 Current
+                            ^^^^^^^
+  ```
+
+- To find all lines starting and ending with a string and having a fixed number of characters in between, use `grep "<string>...<string>" file_name.ext` (Every `.` indicates one character.)
+  ```bash
+  $ grep "Cur..nt" bank.lst
+  106 Mukesh 14000 20/12/2009 Current
+                              ^^^^^^^
+  108 Chirag 0 15/12/2012 Current
+                          ^^^^^^^
+  109 Arya 16000 14/12/2010 Current
+                            ^^^^^^^
+  ```
+
+- To find all lines starting and ending with a string and having any number of characters in between, use `grep "<string>.*<string>" file_name.ext`
+  ```bash
+  $ grep "C.*nt" bank.lst
+  106 Mukesh 14000 20/12/2009 Current
+                              ^^^^^^^
+  108 Chirag 0 15/12/2012 Current
+                          ^^^^^^^
+  109 Arya 16000 14/12/2010 Current
+                            ^^^^^^^
+  ```
+
+- To find lines with strings stored in a file, use `grep -f <pattern_file.ext> <target_file.ext>`
+  ```bash
+  $ cat pattern.txt
+  current
+  Saving
+  ^d
+  
+  $ grep -f pattern.txt bank.lst
+  101 Aditya 0 14/11/2000 current
+                          ^^^^^^^
+  103 Naman0 20/08/2009 current
+                        ^^^^^^^
+  110 Priya 130 16/11/2009 Saving
+                           ^^^^^^
+  ```
