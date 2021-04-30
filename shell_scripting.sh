@@ -2,6 +2,8 @@
 
 
 # Shell vs Bash: https://medium.com/@varunkumar_53845/sh-vs-bash-a-summary-50f92a719e0d
+# Unix had the Bourne Shell, which in Linux is called Bash (Bourne Again SHell).
+# (FYI: Unix vs Linux: https://www.guru99.com/difference-unix-vs-linux.html)
 # Shell scripting crash course (beginners): https://www.youtube.com/watch?v=v-F3YLd6oMw
 
 
