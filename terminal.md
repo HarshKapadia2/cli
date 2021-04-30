@@ -22,6 +22,7 @@
 - [Deleting Files and Directories](#deleting-files--directories)
 - [Chaining Commands](#chaining-commands)
 - [Finding Strings and Counting Occurences](#finding-strings-and-counting-occurences)
+- [AWK](#awk)
 
 ## Opening the Terminal
 
@@ -807,4 +808,87 @@ $ command1 ; command2
                         ^^^^^^^
   110 Priya 130 16/11/2009 Saving
                            ^^^^^^
+  ```
+
+## AWK
+
+- AWK is a programming language executed by the AWK interpreter. 
+- It is named after the three people who developed it.
+- General syntax for the AWK command: `awk option '/pattern/ {action}' <file_name.ext>`
+  - An AWK command must have a pattern, an action or both.
+  - Specifying an option is optional.
+  - If a pattern is not specified, it will be entire line.
+  - If an action is not specified, by default it is print.
+
+- Print all records of file
+  ```awk
+  $ awk '{print}' bank.lst
+  101 Aditya 0 14/11/2000 current
+  102 Anil 10000 20/05/2011 saving
+  ...
+  110 Priya 130 16/11/2009 Saving
+  201 Bina 3000 11/03/2010 saving
+  202 Diya 4000 13/04/2018 saving
+  203 Gargi 2000 21/01/2015 saving
+  ```
+
+- Print first 3 fields (Fields indicated by: `$<field_no>`)
+  ```awk
+  $ awk '{print $1 $2 $3}' bank.lst
+  101Aditya0
+  102Anil10000
+  ...
+  110Priya130
+  201Bina3000
+  202Diya4000
+  203Gargi2000
+  ```
+
+- Sepearate fields by tabs.
+  ```awk
+  $ awk '{print $1 "\t" $2 "\t" $3}' bank.lst
+  101     Aditya  0
+  102     Anil    10000
+  ...
+  110     Priya   130
+  201     Bina    3000
+  202     Diya    4000
+  203     Gargi   2000
+  ```
+
+- Format specifiers
+  ```awk
+  $ awk '{printf "%3d \t %7s \t %5d\n", $1, $2, $3}' bank.lst
+  101       Aditya             0
+  102         Anil         10000
+  ...
+  110        Priya           130
+  201         Bina          3000
+  202         Diya          4000
+  203        Gargi          2000
+  ```
+
+- Print only those records having a pattern.
+  ```awk
+  $ awk '/current/ {print}' bank.lst
+  101 Aditya 0 14/11/2000 current
+  103 Naman 0 20/08/2009 current
+  
+  # OR
+  
+  $ awk '/current/ {print $0}' bank.lst  # '$0' means the entire line
+  101 Aditya 0 14/11/2000 current
+  103 Naman 0 20/08/2009 current
+  ```
+
+- Print records based on mathematical conditions
+  ```awk
+  $ awk '$3 < 5000 {print $1 "\t" $2 "\t" $3}' bank.lst
+  101     Aditya  0
+  103     Naman   0
+  108     Chirag  0
+  110     Priya   130
+  201     Bina    3000
+  202     Diya    4000
+  203     Gargi   2000
   ```
