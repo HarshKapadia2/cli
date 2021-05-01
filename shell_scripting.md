@@ -1,4 +1,4 @@
-# shell_scripting
+# Shell Scripting
 
 
 - [Shell vs Bash](https://medium.com/@varunkumar_53845/sh-vs-bash-a-summary-50f92a719e0d)
@@ -6,14 +6,16 @@
 - FYI: [Unix vs Linux](https://www.guru99.com/difference-unix-vs-linux.html)
 - [Shell scripting crash course (beginners)](https://www.youtube.com/watch?v=v-F3YLd6oMw)
 
+---
 
-- The '#' is called 'sharp' and the '!' is called a 'bang', so together they're called a 'shebang'.
+- The `#` is called 'sharp' and the `!` is called a 'bang', so together (`#!`) they're called a 'shebang'.
 - A shebang is used to declare the dialect being used by the script.
 - To find the location of the dailect, use the 'which' command. Eg: `which bash` Output: `/usr/bin/bash`
+- Add this as the first line in every Shell script.
 
-```bash
-#!/usr/bin/bash
-```
+	```bash
+	#!/usr/bin/bash
+	```
 
 - Output to terminal
 
