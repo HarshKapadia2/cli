@@ -891,4 +891,44 @@ $ command1 ; command2
   201     Bina    3000
   202     Diya    4000
   203     Gargi   2000
+  
+  $ awk '$3 > 3000 && $3 < 8000 {print $1 "\t" $2 "\t" $3}' bank.lst  # '||' is logical OR
+  105     Jyotsna 5000
+  202     Diya    4000
+  ```
+
+- Print records if a field matches a certain string/pattern or not.
+  ```awk
+  $ awk '$5 == "current"' bank.lst  # OR awk '$5 ~/current/' bank.lst
+  101 Aditya 0 14/11/2000 current
+  103 Naman 0 20/08/2009 current
+  
+  $ awk '$5 != "current"' bank.lst  # OR awk '$5 !~/current/' bank.lst
+  102 Anil 10000 20/05/2011 saving
+  104 Ram 10000 15/08/2010 saving
+  ...
+  110 Priya 130 16/11/2009 Saving
+  201 Bina 3000 11/03/2010 saving
+  202 Diya 4000 13/04/2018 saving
+  203 Gargi 2000 21/01/2015 saving
+  ```
+
+- Print records with a field ending or not ending with a string/pattern.
+  ```awk
+  $ awk '$5 ~/nt$/' bank.lst
+  101 Aditya 0 14/11/2000 current
+  103 Naman 0 20/08/2009 current
+  106 Mukesh 14000 20/12/2009 Current
+  108 Chirag 0 15/12/2012 Current
+  109 Arya 16000 14/12/2010 Current
+  
+  $ awk '$5 !~/nt$/' bank.lst
+  102 Anil 10000 20/05/2011 saving
+  104 Ram 10000 15/08/2010 saving
+  105 Jyotsna 5000 16/06/2012 saving
+  107 Vishal 14500 30/11/2011 saving
+  110 Priya 130 16/11/2009 Saving
+  201 Bina 3000 11/03/2010 saving
+  202 Diya 4000 13/04/2018 saving
+  203 Gargi 2000 21/01/2015 saving
   ```
