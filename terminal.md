@@ -357,9 +357,40 @@ This means it will change the permission of sample.txt to rw-rw-r-- i.e, `user` 
   $ cat > sample.txt
   ```
 ### `echo` command
-- The **`echo`** command will duplicate whatever you specify in the command, and put the copy into a file.
+
+- The `echo` command will print out anything written after it.
   ```bash
-  $ echo "Text to add to file" > sample.txt
+  $ echo Print this text
+  Print this text
+  ```
+
+- It will print out environment variables like `$HOME`, `$USER`, `$SHELL`, `$HOSTNAME`, etc as well.
+  ```bash
+  $ echo $SHELL
+  /bin/bash
+  ```
+
+- It can be used to add text to a file using the [output redirection operator](#redirect-operator-). (It overwrites the contents of the entire file.)
+  ```bash
+  $ cat sample.txt
+  Original text
+  
+  $ echo New text! > sample.txt
+  
+  $ cat sample.txt
+  New text!
+  ```
+
+- It can be used to append text to a file using the [output redirection operator](#redirect-operator-).
+  ```bash
+  $ cat sample.txt
+  Original text
+  
+  $ echo New text! >> sample.txt
+  
+  $ cat sample.txt
+  Original text
+  New text!
   ```
 
 ### Using text editors
