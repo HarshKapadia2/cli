@@ -1,4 +1,3 @@
-
 # Unix/Linux Terminal
 
 **Table of Contents**
@@ -812,8 +811,11 @@ $ command1 ; command2
 
 ## AWK
 
-- AWK is a programming language executed by the AWK interpreter. 
-- It is named after the three people who developed it.
+- AWK is a programming language executed by the AWK interpreter.
+- The AWK language is a data-driven scripting language consisting of a set of actions to be taken against streams of textual data – either run directly on files or used as part of a pipeline – for purposes of extracting or transforming text, such as producing formatted reports.
+- It designed for text processing and typically used as a data extraction and reporting tool.
+- Like `sed` and [`grep`](#grep), it is a filter, and is a standard feature of most Unix-like operating systems.
+- It is named after the three people who developed it, namely  Alfred Aho, Peter Weinberger and Brian Kernighan.
 - General syntax for the AWK command: `awk option '/pattern/ {action}' <file_name.ext>`
   - An AWK command must have a pattern, an action or both.
   - Specifying an option is optional.
@@ -931,4 +933,31 @@ $ command1 ; command2
   201 Bina 3000 11/03/2010 saving
   202 Diya 4000 13/04/2018 saving
   203 Gargi 2000 21/01/2015 saving
+  ```
+
+- Print records with a field value, while ignoring the case.
+  ```awk
+  $ awk '$5 ~/[Cc]urrent/' bank.lst
+  101 Aditya 0 14/11/2000 current
+  103 Naman 0 20/08/2009 current
+  106 Mukesh 14000 20/12/2009 Current
+  108 Chirag 0 15/12/2012 Current
+  109 Arya 16000 14/12/2010 Current
+  ```
+
+- Built-in AWK variables
+  - https://www.thegeekstuff.com/2010/01/8-powerful-awk-built-in-variables-fs-ofs-rs-ors-nr-nf-filename-fnr/
+  - https://www.linuxnix.com/awk-scripting-learn-awk-built-in-variables-with-examples/
+
+- Print record numbers 4 to 6.
+  ```awk
+  $ awk 'NR > 3 && NR < 7 {print $1 "\t" $2}' bank.lst
+  104     Ram
+  105     Jyotsna
+  106     Mukesh
+  
+  $ awk 'NR == 4, NR == 6 {print $1 "\t" $2}' bank.lst
+  104     Ram
+  105     Jyotsna
+  106     Mukesh
   ```
