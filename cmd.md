@@ -162,7 +162,7 @@ OR
 
 ## Renaming files
 
-- `ren source_file.ext/source_dir destination_dir` to rename a file or a dir.
+- `ren <source_file.ext/source_dir_name> <new_file_name.ext/new_dir_name>` to rename a file or a dir.
 
 ## Deleting a file
 
