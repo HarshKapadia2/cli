@@ -113,7 +113,7 @@
 	case "$ANSWER" in
 		[yY] | [yY][eE][sS]) # Accepts 'y', 'Y', 'yes', 'YES', 'Yes', 'yEs'...
 			echo "You can have a beer ( :"
-			;;
+			;; # ';;' is equivalent to a 'break' statement in C language
 		[nN] | [nN][oO])
 			echo "Sorry, no drinking"
 			;;
