@@ -1,7 +1,5 @@
 # cli 
 
-CLI = Command Line Interface
-
 Command Line Interface (CLI) commands and keyboard shortcuts for Command Prompt (cmd) and Terminal (Unix & MacOS).
 
 ## Commands and keyboard shortcuts
@@ -18,7 +16,7 @@ Command Line Interface (CLI) commands and keyboard shortcuts for Command Prompt 
 
 ## Code of Conduct
 
-- Have a look at the [code of conduct](CODE_OF_CONDUCT.md) that governs this repo.
+Have a look at the [code of conduct](CODE_OF_CONDUCT.md) that governs this repo.
 
 ## Misc
 
