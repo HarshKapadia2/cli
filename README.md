@@ -2,13 +2,12 @@
 
 CLI = Command Line Interface
 
-Commands and keyboard shortcuts for Command Prompt (cmd), PowerShell & Terminal (Unix & MacOS).
+Command Line Interface (CLI) commands and keyboard shortcuts for Command Prompt (cmd) and Terminal (Unix & MacOS).
 
 ## Commands and keyboard shortcuts
 
 - [Windows Command Prompt (cmd)](cmd.md)
 - [Unix/Linux Terminal](terminal.md)
-- [PowerShell](powershell.md)
 - [Shell Scripting](shell_scripting.md)
 
 ## Contributing
@@ -17,7 +16,7 @@ Commands and keyboard shortcuts for Command Prompt (cmd), PowerShell & Terminal 
 - View the [`CONTRIBUTING.md`](CONTRIBUTING.md) file for contribution details.
 - The amazing contributors can be found in the [`CONTRIBUTORS.md`](CONTRIBUTORS.md) file!
 
-## Code of conduct
+## Code of Conduct
 
 - Have a look at the [code of conduct](CODE_OF_CONDUCT.md) that governs this repo.
 
