@@ -8,6 +8,7 @@ These are the amazing people who have contributed to this project!
 
 - KartikSoneji (Kartik Soneji, kartiksoneji@rocketmail.com)
 - SakshiUppoor (Sakshi Uppoor, sakshiuppoor@gmail.com)
+- DishantIsrani (Dishant Israni, isranidishant14@gmail.com)
 - Add your names here!
 
 ## Author
