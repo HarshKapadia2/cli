@@ -1005,102 +1005,66 @@ $ command1 ; command2
 ## Installing `wget`
 - The `wget` package is pre-installed on most Linux distributions today.
 
-- To check whether the `wget` package is installed on your system, open up your console, type `wget`, and press enter. If you have `wget` installed, the system will print `wget: missing URL`. Otherwise, it will print `wget command not found`.
-
-- If your operating system is Ubuntu, or another Debian-based Linux distribution which uses APT for package management, you can install `wget` with apt-get:
+- If your operating system is Ubuntu, or another Debian-based Linux distribution, you can install `wget` with apt-get:
   ```
   sudo apt-get install wget
   ```
-
-- If your operating system is CentOS and Fedora you can install `wget` with yum:
-  ```
-  sudo yum install wget
-  ```
-
-- For other operating systems, see your package manager's documentation for information about how to locate the `wget` binary package and install it. Or, you can install it from [source](https://www.computerhope.com/jargon/s/source.htm) from the [GNU official website](https://www.gnu.org/software/wget/).
-
 
 ## General Syntax
 - General syntax for the `wget` command: 
   ```
   wget [options] [url]
   ```
-
   `OPTIONS` - [Wget Options](https://linux.die.net/man/1/wget). 
 
   `URL` - URL of the file or directory you want to download or synchronize.
 
 ### How to Download a File with `wget`
 
-- In its simplest form, when used without any option, `wget` will download the resource specified in the `[url]` to the current directory.
-
-- In the following example, we are downloading the Linux kernel tar archive:
+- The simplest way to use wget is to provide it with the location of a file to download over HTTP. For example, to download the file `http://website.com/files/file.zip`, this command:
   ```
-  $ wget https://cdn.kernel.org/pub/linux/kernel/v4.x/linux-4.17.2.tar.xz
+  $ wget http://website.com/files/file.zip
   ```
-  ```
-  $ wget https://cdn.kernel.org/pub/linux/kernel/v4.x/linux-4.17.2.tar.xz
-  --2021-12-12 12:29:08--  https://cdn.kernel.org/pub/linux/kernel/v4.x/linux-4.17.2.tar.xz
-  Resolving cdn.kernel.org (cdn.kernel.org)... 151.101.153.176, 2a04:4e42:24::432
-  Connecting to cdn.kernel.org (cdn.kernel.org)|151.101.153.176|:443... connected.
-  HTTP request sent, awaiting response... 200 OK
-  Length: 102167060 (97M) [application/x-xz]
-  Saving to: ‘linux-4.17.2.tar.xz’
+- This will download the zip file of the specific software mentioned.
 
-  linux-4.17.2.tar.xz          100%[===========================================>]  97.43M  4.70MB/s    in 18s     
+- Once the download is complete, you can find the downloaded file in your current [working directory].
 
-  2021-12-12 12:29:27 (5.35 MB/s) - ‘linux-4.17.2.tar.xz’ saved [102167060/102167060]
+- You can check your current working directory using the command `pwd`
 
-  ```
-  
-  - As you can see, `wget` starts by resolving the domain’s IP address, then connects to the remote server and starts the transfer.
-  - During the download, `wget` shows the progress bar alongside the file name, file size, download speed, and the estimated time to complete the download. Once the download is complete, you can find the downloaded file in your current working directory.
-  - You can check your current working directory using the command `pwd`
-  - If the file already exists, `wget` will add `.N` (number) at the end of the file name.
+- If the file already exists, `wget` will add `.N` (number) at the end of the file name.
 
 ### Saving the Downloaded File Under Different Name
 
 - To save the downloaded file under a different name, pass the `-O` option followed by the chosen name:
   ```
-  $ wget -O latest-hugo.zip https://github.com/gohugoio/hugo/archive/master.zip
+  $ wget -O New-Name.zip http://website.com/files/file.zip
   ```
-- The command above will save the latest `hugo` zip file from GitHub as `latest-hugo.zip` instead of its original name.
+- The command above will save the latest `file` zip file from GitHub as `New-Name.zip` instead of its original name.
 
 ### Downloading a File to a Specific Directory
 
 - By default, `wget` will save the downloaded file in the current working directory. To save the file to a specific location, use the `-P` option:
-  ```
-  $ wget -P /root/Desktop http://mirrors.mit.edu/centos/7/isos/x86_64/CentOS-7-x86_64-Minimal-1804.iso
-  ```
-- The command above tells `wget` to save the CentOS 7 iso file to the /root/Desktop directory.
 
-### Downloading in Background
-- To download in the background, use the `-b` option. In the following example, we are downloading the OpenSuse iso file in the background:
+- For example you want to save your downloaded file on your Desktop in your root account use the following command.  
   ```
-  $ wget -b https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-DVD-x86_64-Current.iso
-  ```
-
-- By default, the output is redirected to `wget-log` file in the current directory. To watch the status of the download, use the [tail](https://linuxize.com/post/linux-head-command/) command:
-  ```
-  tail -f wget-log
+  $ wget -P /root/Desktop http://website.com/files/file.zip
   ```
 
 ### Downloading Multiple Files
 
-- If you want to download multiple files at once, use the `-i` option followed by the path to a local or external file containing a list of the URLs to be downloaded. Each URL needs to be on a separate line.
+- You can save the link of multiple files or softwares you want to download in a file and using the `-i` option you can download all the files together by just giving the path to the file with the link.
 
-- The following example shows how to download the Arch Linux, Debian, and Fedora iso files using the URLs specified in the `Download.txt` file:
+- Each URL needs to be on a separate line.
   ```
-  $ wget -i linux-distros.txt
+  $ wget -i Download.txt
   ```
   <center>Download.txt</center>
   
   ```
-  http://mirrors.edge.kernel.org/archlinux/iso/2018.06.01/archlinux-2018.06.01-x86_64.iso
-  https://cdimage.debian.org/debian-cd/current/amd64/iso-cd/debian-9.4.0-amd64-netinst.iso
-  https://download.fedoraproject.org/pub/fedora/linux/releases/28/Server/x86_64/iso/Fedora-Server-dvd-x86_64-28-1.1.iso
+  http://website.com/files/file1.zip
+  http://website.com/files/file2.zip
+  http://website.com/files/file3.zip 
   ```
-
-With `wget`, you can download multiple files, resume partial downloads, mirror websites, and combine the `wget` options according to your needs.
+- As you can see above the download.txt has 3 files using the `-i` command with wget you can download all 3 files together.
 
 To learn more about `wget`, visit the [GNU wget Manual](https://www.gnu.org/software/wget/manual/wget.html) page.
