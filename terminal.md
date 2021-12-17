@@ -115,6 +115,33 @@ pwd: pwd [-LP]
   Returns 0 unless an invalid option is given or the current directory
   cannot be read.
 ```
+
+### Variables
+
+Syntax: `${var_name}` or `$var_name`
+
+Pre-defined variables: `$HOME`, etc...
+
+Custom variables:
+
+```bash
+$ foo=bar
+$ echo ${foo}
+bar
+```
+
+NOTE: Strings in bash can be defined with `'` and `"` delimiters, but they are not equivalent. Strings delimited with `'` are literal strings and will not substitute variable values whereas `"` delimited strings will.
+
+```bash
+$ name=selena
+
+$ echo 'Hey ${name}!'
+Hey ${name}!
+
+$ echo "Hey ${name}!"
+Hey Selena!
+```
+
 ## Basic Commands
   
 ### Print name of cwd (current working directory)
