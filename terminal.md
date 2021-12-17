@@ -1023,3 +1023,79 @@ $ command1 ; command2
   105     Jyotsna
   106     Mukesh
   ```
+
+## Downloading files from the web
+
+## `wget`
+
+- GNU `Wget` is a command-line utility for downloading files from the web.
+- `Wget`, you can download files using HTTP, HTTPS, and FTP protocols.
+- `Wget` provides a number of options allowing you to download multiple files, resume downloads, limit the bandwidth, recursive downloads, download in the background, mirror a website, and much more.
+- `wget` is non-interactive, meaning that it can work in the background, while the user is not logged on, which allows you to start a retrieval and disconnect from the system, letting `wget` finish the work. By contrast, most web browsers require constant user interaction, which make transferring a lot of data difficult.
+
+## Installing `wget`
+- The `wget` package is pre-installed on most Linux distributions today.
+
+- If your operating system is Ubuntu, or another Debian-based Linux distribution, you can install `wget` with apt-get:
+  ```
+  sudo apt-get install wget
+  ```
+
+## General Syntax
+- General syntax for the `wget` command: 
+  ```
+  wget [options] [url]
+  ```
+  `OPTIONS` - [Wget Options](https://linux.die.net/man/1/wget). 
+
+  `URL` - URL of the file or directory you want to download or synchronize.
+
+### How to Download a File with `wget`
+
+- The simplest way to use wget is to provide it with the location of a file to download over HTTP. For example, to download the file `http://website.com/files/file.zip`, this command:
+  ```
+  $ wget http://website.com/files/file.zip
+  ```
+- This will download the zip file of the specific software mentioned.
+
+- Once the download is complete, you can find the downloaded file in your current [working directory].
+
+- You can check your current working directory using the command `pwd`
+
+- If the file already exists, `wget` will add `.N` (number) at the end of the file name.
+
+### Saving the Downloaded File Under Different Name
+
+- To save the downloaded file under a different name, pass the `-O` option followed by the chosen name:
+  ```
+  $ wget -O New-Name.zip http://website.com/files/file.zip
+  ```
+- The command above will save the latest `file` zip file from GitHub as `New-Name.zip` instead of its original name.
+
+### Downloading a File to a Specific Directory
+
+- By default, `wget` will save the downloaded file in the current working directory. To save the file to a specific location, use the `-P` option:
+
+- For example you want to save your downloaded file on your Desktop in your root account use the following command.  
+  ```
+  $ wget -P /root/Desktop http://website.com/files/file.zip
+  ```
+
+### Downloading Multiple Files
+
+- You can save the link of multiple files or softwares you want to download in a file and using the `-i` option you can download all the files together by just giving the path to the file with the link.
+
+- Each URL needs to be on a separate line.
+  ```
+  $ wget -i Download.txt
+  ```
+  <center>Download.txt</center>
+  
+  ```
+  http://website.com/files/file1.zip
+  http://website.com/files/file2.zip
+  http://website.com/files/file3.zip 
+  ```
+- As you can see above the download.txt has 3 files using the `-i` command with wget you can download all 3 files together.
+
+To learn more about `wget`, visit the [GNU wget Manual](https://www.gnu.org/software/wget/manual/wget.html) page.
