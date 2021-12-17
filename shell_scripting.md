@@ -32,6 +32,21 @@
 	echo "My name is $NAME"
 	echo "My name is ${NAME}"
 	```
+	- Strings in bash can be defined with `'` and `"` delimiters, but they are not equivalent. Strings delimited with `'` are literal strings and will not substitute variable values whereas `"` delimited strings will.
+
+	```bash
+	$ name=selena
+
+	$ echo 'Hey ${name}!'
+	Hey ${name}!
+
+	$ echo "Hey ${name}!"
+	Hey Selena!
+	```
+	- `${}` and `$()` are different.
+		- `${abc}` is variable/parameter substitution.
+		- `$(abc)` is command substitution and will execute whatever is inside the `()`, which means it is usually used to run a command or store the output of a command.
+		- [More info and good practices](https://superuser.com/a/935427)
 
 - User input
 
