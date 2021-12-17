@@ -42,6 +42,9 @@
 
 	$ echo "Hey ${name}!"
 	Hey Selena!
+	
+	$ echo "Hey '${name}'!"
+	Hey 'Selena'!
 	```
 	- `${}` and `$()` are different.
 		- `${abc}` is variable/parameter substitution.
@@ -170,6 +173,24 @@
 			((LINE++)) # '(())': https://www.geeksforgeeks.org/basic-operators-in-shell-scripting/
 	done < "./test_f1.md"
 	```
+
+- Internal Field Separator (IFS)
+	- Used to separate a string based on a certain character.
+	- Default value: Three character string comprising a space, tab and newline.
+	```bash
+	$ string="foo bar foobar"
+	
+	$ for i in $string
+	> do
+	>    echo "'$i' is the substring"
+	> done
+	'foo' is the substring 
+	'bar' is the substring
+	'foobar' is the substring
+	```
+	- Custom values can be set.
+	- [More info and use cases](https://www.baeldung.com/linux/ifs-shell-variable)
+	- [Unset IFS - unexpected behaviour](https://stackoverflow.com/a/58511401/11958552)
 
 - Functions
 
