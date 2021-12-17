@@ -350,19 +350,23 @@ This means it will change the permission of sample.txt to rw-rw-r-- i.e, `user` 
 
 - `mkdir dir_name` will create a folder in the cwd, if the `dir_name` doesn't already exist in the cwd.
 - Use `""` if the `dir_name` has spaces, eg: `mkdir "dir name"`.
-
 - Multiple folders can be created using `mkdir {dir1,dir2,dir3}`.
   - **Do not add any spaces** in the curly brackets for the directory names.
-  ```bash
-  $ # mkdir [option] dir_name
-  $ mkdir new_dir
+- Use the flag `-p` to create intermediate directories if they do not exist and not cause an error if they already exist.
 
-  $ # Spaces in directory name
-  $ mkdir "New Folder"
+```bash
+# mkdir [option] dir_name
+$ mkdir new_dir
 
-  $ # Creating multiple directories
-  $ mkdir {dir1,dir2,dir3}
-  ```  
+# Spaces in directory name
+$ mkdir "New Folder"
+
+# Creating multiple directories
+$ mkdir {dir1,dir2,dir3}
+
+# Creating intermediate directories without causing errors if they already exist
+$ mkdir -p public/css/summary public/html
+```  
 
 ## Creating files
 
