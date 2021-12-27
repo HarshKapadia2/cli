@@ -180,9 +180,34 @@
 	done < "./test_f1.md"
 	```
 
+- String manipulation
+	- Delete the shortest `substring` match from the front of `${str}`: `${str#substring}`
+	- Delete the shortest `substring` match from the back of `${str}`: `${str%substring}`
+	- Delete the longest `substring` match from the front of `${str}`: `${str##substring}`
+	- Delete the longest `substring` match from the back of `${str}`: `${str%%substring}`
+
+	```bash
+	$ str="Hey Selena! Hey Lucas!"
+	
+	$ echo ${str#*Hey}
+	Selena! Hey Lucas!
+	
+	$ echo ${str%Hey*}
+	Hey Selena! 
+	
+	$ echo ${str##*Hey}
+	Lucas!
+	
+	$ echo ${str%%Hey*}
+	
+	```
+
+> The asterisk (`*`) is a catchall to match any and all characters. ([More info](https://www.livefirelabs.com/unix_tip_trick_shell_script/unix_operating_system_fundamentals/unix-special-characters.htm#:~:text=metacharacters%20are%20%22*%22%2C%20%22%3F%22%2C%20%22%5B%5D%22%2C%20and%20%22%2D%22.-,The%20Asterisk,-The%20*%20(asterisk)%20metacharacter))
+
 - Internal Field Separator (IFS)
 	- Used to separate a string based on a certain character.
 	- Default value: Three character string comprising a space, tab and newline.
+
 	```bash
 	$ string="foo bar foobar"
 	
