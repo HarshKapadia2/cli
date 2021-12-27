@@ -8,7 +8,7 @@
 
 ---
 
-- The `#` is called 'sharp' and the `!` is called a 'bang', so together (`#!`) they're called a 'shebang'.
+- The `#` is called 'sharp' and the `!` is called a 'bang', so together (`#!`) they're called a 'shebang' or 'hashbang'.
 - A shebang is used to declare the dialect being used by the script.
 - To find the location of the dailect, use the 'which' command. Eg: `which bash` Output: `/usr/bin/bash`
 - Add this as the first line in every Shell script.
@@ -16,6 +16,12 @@
 	```bash
 	#!/usr/bin/bash
 	```
+
+- Running/executing a Shell script
+	- Two ways
+		- `./script.sh` (Preferred, as the terminal can decide the interpreter to be used.)
+		- `sh script.sh`
+	- [Difference between `./script.sh` and `sh script.sh`.](https://unix.stackexchange.com/a/136550)
 
 - Output to terminal
 
@@ -170,7 +176,7 @@
 	while read -r CURRENT_LINE
 		do
 			echo "$LINE: $CURRENT_LINE"
-			((LINE++)) # '(())': https://www.geeksforgeeks.org/basic-operators-in-shell-scripting/
+			((LINE++)) # '(())': https://www.geeksforgeeks.org/basic-operators-in-shell-scripting
 	done < "./test_f1.md"
 	```
 
