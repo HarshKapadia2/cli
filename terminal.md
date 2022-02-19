@@ -79,11 +79,24 @@ The `~`(tilde) is shorthand for your `home` directory. Within your home director
 
 An **absolute or full path** points to the same location in a file system regardless of the current working directory. To do that, it must start from the root directory.
 
-> `/home/username` is an absolute path.
+An absolute path always starts with a forward slash (`/`), which represents the start of the filesystem.
+
+> Eg: `/home/username` is an absolute path.
 
 By contrast, a **relative path** starts from some given working directory, avoiding the need to provide the full absolute path. A filename can be considered as a relative path based at the current working directory. If the working directory is not the file's parent directory, a file not found error will result if the file is addressed by its name.
 
-> `../docs` is a relative path
+A relative path never starts with a forward slash (`/`).
+
+A relative path can start with a
+
+- `.`
+  - Represents the CWD (Current Working Directory).
+- `..`
+  - Represents the parent directory of the CWD.
+- `~`
+  - Represents the home directory of the logged in user.
+
+> Eg: `../docs` is a relative path
 
 ## Basics of Linux/Unix Commands
 
