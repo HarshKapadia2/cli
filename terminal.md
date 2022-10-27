@@ -233,6 +233,10 @@ $ pwd
   /
   ```
 
+> NOTE:
+> - [About the Use of Dot-Slash (`./`) in Commands](http://www.linfo.org/dot_slash.html)
+> - [Absolute vs Relative Path in Linux: What's the Difference?](https://linuxhandbook.com/absolute-vs-relative-path)
+
 - `cd ~/` or `cd ~` or `cd` will go to directory specified by `HOME` shell variable (which is usually set to user's home directory)
 
   ```bash
@@ -616,6 +620,14 @@ Eg: `ls -al >> listings.txt` will append the output of command ls -al is re-dire
   $ # cp -r src_dir dest_dir
   $ cp -r old_folder new_folder
   ```
+
+- The Secure Copy (`scp`) command can be used to transfer files from one machine to another. (It uses [SSH](https://networking.harshkapadia.me/ssh) under the hood.)
+
+  ```bash
+  $ scp file_to_be_transferred.txt remote_username@0.0.0.0:/remote/directory/new_file_name.txt
+  ```
+
+> [More details](https://linuxize.com/post/how-to-use-scp-command-to-securely-transfer-files)
 
 ## Renaming files
 

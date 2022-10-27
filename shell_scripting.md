@@ -5,6 +5,7 @@
 - Unix had the Bourne Shell, which was modified in Linux and is called Bash (Bourne Again SHell).
 - FYI: [Unix vs Linux](https://www.guru99.com/difference-unix-vs-linux.html)
 - [Shell scripting crash course (beginners)](https://www.youtube.com/watch?v=v-F3YLd6oMw)
+- [Absolute vs Relative Path in Linux: What's the Difference?](https://linuxhandbook.com/absolute-vs-relative-path)
 
 ---
 
@@ -22,6 +23,7 @@
 		- `./script.sh` (Preferred, as the terminal can decide the interpreter to be used.)
 		- `sh script.sh`
 	- [Difference between `./script.sh` and `sh script.sh`.](https://unix.stackexchange.com/a/136550)
+		- [About the Use of Dot-Slash (`./`) in Commands](http://www.linfo.org/dot_slash.html)
 
 - Output to terminal
 
