@@ -6,6 +6,7 @@
 - FYI: [Unix vs Linux](https://www.guru99.com/difference-unix-vs-linux.html)
 - [Shell scripting crash course (beginners)](https://www.youtube.com/watch?v=v-F3YLd6oMw)
 - [Absolute vs Relative Path in Linux: What's the Difference?](https://linuxhandbook.com/absolute-vs-relative-path)
+- [Shell Script Best Practices](https://sharats.me/posts/shell-script-best-practices)
 
 ---
 
