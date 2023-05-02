@@ -12,12 +12,13 @@
 -   [The Missing Semester of Your CS Education](https://missing.csail.mit.edu)
 -   [Shell Script Best Practices](https://sharats.me/posts/shell-script-best-practices)
 -   [Advanced Bash-Scripting Guide](https://tldp.org/LDP/abs/html/index.html)
+-   Check Shell scripts: [shellcheck.net](https://www.shellcheck.net)
 
 ---
 
 -   The `#` is called 'sharp' and the `!` is called a 'bang', so together (`#!`) they're called a 'shebang' or 'hashbang'.
 -   A shebang is used to declare the dialect being used by the script.
--   To find the location of the dailect, use the 'which' command. Eg: `which bash` Output: `/usr/bin/bash`
+-   To find the location of the dialect, use the 'which' command. Eg: `which bash` Output: `/usr/bin/bash`
 -   Add this as the first line in every Shell script.
 
     ```bash
@@ -31,6 +32,8 @@
         -   `sh script.sh`
     -   [Difference between `./script.sh` and `sh script.sh`.](https://unix.stackexchange.com/a/136550)
         -   [About the Use of Dot-Slash (`./`) in Commands](http://www.linfo.org/dot_slash.html)
+
+-   Error handling (`set -Eeuo pipefail`, `trap`, etc.): [How to Trap Errors in Bash Scripts on Linux](https://www.howtogeek.com/821320/how-to-trap-errors-in-bash-scripts-on-linux)
 
 -   Output to terminal
 
@@ -84,6 +87,8 @@
     	echo "Hey Sel!"
     fi # ending if statement
     ```
+
+> [Difference between `()`, `(())`, `[]` and `[[]]`](https://superuser.com/questions/1533900/difference-between-and-or-and-in-bash)
 
 -   If-elif-else statement
 
@@ -178,6 +183,12 @@
     		echo "Renaming $FOLE to test_$FOLE"
     		mv $FOLE test_$FOLE
     done
+
+    max=10
+    for (( i=2; i <= $max; ++i )) # The whitespaces in this line don't matter.
+    	do
+    		echo "$i"
+    done
     ```
 
 -   While loop
@@ -189,9 +200,11 @@
     while read -r CURRENT_LINE
     	do
     		echo "$LINE: $CURRENT_LINE"
-    		((LINE++)) # '(())': https://www.geeksforgeeks.org/basic-operators-in-shell-scripting
+    		((LINE++)) # '(())': https://superuser.com/questions/1533900/difference-between-and-or-and-in-bash
     done < "./test_f1.md"
     ```
+
+> [Difference between `()`, `(())`, `[]` and `[[]]`](https://superuser.com/questions/1533900/difference-between-and-or-and-in-bash)
 
 -   String manipulation
 
