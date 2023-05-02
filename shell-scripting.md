@@ -1,11 +1,17 @@
 # Shell Scripting
 
+-   [History of various Shells](https://askubuntu.com/a/976504)
 -   [Shell vs Bash](https://medium.com/@varunkumar_53845/sh-vs-bash-a-summary-50f92a719e0d)
+-   [Is bash scripting the same as shell scripting?](https://askubuntu.com/a/172487)
+    -   `sh` = Bourne Shell
+    -   `bash` = Bourne Again Shell
 -   Unix had the Bourne Shell, which was modified in Linux and is called Bash (Bourne Again SHell).
--   FYI: [Unix vs Linux](https://www.guru99.com/difference-unix-vs-linux.html)
+-   [Unix vs Linux](https://www.guru99.com/difference-unix-vs-linux.html)
 -   [Shell scripting crash course (beginners)](https://www.youtube.com/watch?v=v-F3YLd6oMw)
 -   [Absolute vs Relative Path in Linux: What's the Difference?](https://linuxhandbook.com/absolute-vs-relative-path)
+-   [The Missing Semester of Your CS Education](https://missing.csail.mit.edu)
 -   [Shell Script Best Practices](https://sharats.me/posts/shell-script-best-practices)
+-   [Advanced Bash-Scripting Guide](https://tldp.org/LDP/abs/html/index.html)
 
 ---
 
