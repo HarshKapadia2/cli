@@ -1,6 +1,6 @@
 # Unix/Linux Terminal
 
-**Table of Contents**
+## Table of Contents
 
 -   [Opening the Terminal](#opening-the-terminal)
 -   [Keyboard Shortcuts](#keyboard-shortcuts)
@@ -21,6 +21,7 @@
 -   [Deleting Files and Directories](#deleting-files--directories)
 -   [Chaining Commands](#chaining-commands)
 -   [Finding Strings and Counting Occurences](#finding-strings-and-counting-occurences)
+    -   [grep](#grep)
 -   [AWK](#awk)
 
 ## Opening the Terminal
@@ -535,7 +536,7 @@ Eg: `ls -al >> listings.txt` will append the output of command ls -al is re-dire
 
 ## Editing a file
 
-### Vi Text Editor
+### Vi
 
 -   **Vi** is the oldest text editor in Linux. It was created alongside the Linux operating system for directly editing text files.
     ```bash
@@ -546,18 +547,21 @@ Eg: `ls -al >> listings.txt` will append the output of command ls -al is re-dire
     > -   Press the letter `i` to switch to insert mode, then type a few words to try it out.
     > -   To save and exit press `Esc :x` and hit `Enter`.
 
-### Vim Text Editor
+### Vim
 
 -   **Vi** editor wasn’t very user-friendly. **Vim** is a newer version, which stands for **Vi editor, Modified**.
+
     ```bash
     $ vim sample.txt
     ```
-    > This screen will look similar to the **Vi** editor screen.
-    >
-    > -   Press **`i`** to insert text, and type a few words.
-    > -   Save the file and exit by entering: <kbd>Esc</kbd> + `:wq` + <kbd>Enter</kbd>
 
-### Nano Text Editor
+-   [Basic guide to Vim](https://missing.csail.mit.edu/2020/editors)
+    -   [Dotfiles (`.vimrc`)](https://github.com/HarshKapadia2/dotfiles)
+-   [Find and Replace in Vim / Vi](https://linuxize.com/post/vim-find-replace)
+    -   [More on Regular Expression](https://harshkapadia2.github.io/regex)
+-   [Getting Started with Vim: An Interactive Guide](https://scotch.io/tutorials/getting-started-with-vim-an-interactive-guide)
+
+### Nano
 
 -   **Nano** is a newer and much easier text editor to navigate.
     ```bash
@@ -567,10 +571,6 @@ Eg: `ls -al >> listings.txt` will append the output of command ls -al is re-dire
     >
     > -   Enter some text, then press <kbd>Ctrl</kbd>+<kbd>O</kbd> to save the changes.
     > -   Press <kbd>Ctrl</kbd>+<kbd>X</kbd> to exit the editor.
-
-#### Further Reading:
-
--   [Getting Started with Vim: An Interactive Guide](https://scotch.io/tutorials/getting-started-with-vim-an-interactive-guide)
 
 ## Reading file content
 
@@ -725,6 +725,7 @@ $ command1 ; command2
 
 ### `grep`
 
+-   `grep` or `g/re/p`: Global [Regular Expression](https://harshkapadia2.github.io/regex) Print
 -   [Origin of `grep`](https://www.youtube.com/watch?v=NTfOnGZUZDk)
 
 -   To find the occurence of a string, use `grep "<string>" file_name.ext`
@@ -989,6 +990,8 @@ $ command1 ; command2
     110 Priya 130 16/11/2009 Saving
                              ^^^^^^
     ```
+
+-   To search directories recursively, use `grep -R`
 
 ## AWK
 
