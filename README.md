@@ -2,7 +2,7 @@
 
 Command Line Interface (CLI) commands and keyboard shortcuts for Command Prompt (cmd) and Terminal (Unix & MacOS).
 
--   [Shell Scripting](shell_scripting.md)
+-   [Shell Scripting](shell-scripting.md)
 -   [Unix/Linux Terminal](terminal.md)
 -   [Windows Command Prompt (cmd)](cmd.md)
 
