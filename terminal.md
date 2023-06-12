@@ -23,6 +23,7 @@
 -   [Finding Strings and Counting Occurences](#finding-strings-and-counting-occurences)
     -   [grep](#grep)
 -   [AWK](#awk)
+-   [Disk and File Size](#disk-and-file-size)
 
 ## Opening the Terminal
 
@@ -560,6 +561,8 @@ Eg: `ls -al >> listings.txt` will append the output of command ls -al is re-dire
 -   [Find and Replace in Vim / Vi](https://linuxize.com/post/vim-find-replace)
     -   [More on Regular Expression](https://harshkapadia2.github.io/regex)
 -   [Getting Started with Vim: An Interactive Guide](https://scotch.io/tutorials/getting-started-with-vim-an-interactive-guide)
+-   [Tips on Window Management in Vim](https://advancedweb.hu/tips-on-window-management-in-vim)
+-   [How to add text at the end of each line in Vim?](https://stackoverflow.com/questions/11303032/how-to-add-text-at-the-end-of-each-line-in-vim)
 
 ### Nano
 
@@ -1157,3 +1160,8 @@ $ command1 ; command2
     105     Jyotsna
     106     Mukesh
     ```
+
+## Disk and File Size
+
+-   [How to list disks, partitions and filesystems in Linux?](https://unix.stackexchange.com/questions/157154/how-to-list-disks-partitions-and-filesystems-in-linux)
+-   [4 Ways to Check File Size in Linux](https://www.howtouselinux.com/post/check-file-size-in-linux)
