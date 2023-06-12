@@ -124,6 +124,8 @@
     fi
     ```
 
+    > [Understanding boolean operators in bash script](https://unix.stackexchange.com/questions/105935/understanding-boolean-operators-in-bash-script)
+
 -   File conditions
 
     -   `-d file` True if the file is a directory
@@ -204,6 +206,8 @@
     done < "./test_f1.md"
     ```
 
+    > [More on the Bash While Loop](https://linuxize.com/post/bash-while-loop)
+
 > [Difference between `()`, `(())`, `[]` and `[[]]`](https://superuser.com/questions/1533900/difference-between-and-or-and-in-bash)
 
 -   String manipulation
@@ -262,6 +266,9 @@
     greet "Selena" "29"
     ```
 
+    > -   [More about Bash Functions](https://linuxize.com/post/bash-functions)
+    > -   [How to store output of a function in a variable in bash](https://stackoverflow.com/questions/64724576/how-to-store-output-of-a-function-in-a-variable-in-bash)
+
 -   Create a folder and write to a file
 
     ```bash
@@ -272,3 +279,6 @@
     echo "Contents:"
     cat "hello/world.md"
     ```
+
+-   Arrays
+    -   [Convert a text string in bash to array](https://stackoverflow.com/questions/19657683/convert-a-text-string-in-bash-to-array)
