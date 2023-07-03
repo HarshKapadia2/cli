@@ -5,6 +5,7 @@ Command Line Interface (CLI) commands and keyboard shortcuts for Command Prompt 
 -   [Shell Scripting](shell-scripting.md)
 -   [Unix/Linux Terminal](terminal.md)
 -   [Windows Command Prompt (cmd)](cmd.md)
+-   [Dotfiles](https://github.com/HarshKapadia2/dotfiles)
 
 ## Resources
 
