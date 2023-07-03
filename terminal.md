@@ -27,6 +27,7 @@
     -   [grep](#grep)
 -   [AWK](#awk)
 -   [Disk and File Size](#disk-and-file-size)
+-   [Prompt customization](#prompt-customization)
 
 ## Opening the Terminal
 
@@ -519,7 +520,7 @@ $ mkdir -p public/css/summary public/html
 ### Symbolic Links
 
 -   [What is Symbolic Links in Linux? How to Create Symbolic Links?](https://linuxhandbook.com/symbolic-link-linux/#things-to-keep-in-mind-about-symbolic-links)
--	[What is the difference between a symbolic link and a hard link?](https://stackoverflow.com/questions/185899/what-is-the-difference-between-a-symbolic-link-and-a-hard-link)
+-   [What is the difference between a symbolic link and a hard link?](https://stackoverflow.com/questions/185899/what-is-the-difference-between-a-symbolic-link-and-a-hard-link)
 
 ```bash
 $ ln --symbolic /actual/file/location.ext /symlink/location.ext
@@ -1178,3 +1179,10 @@ $ command1 ; command2
 
 -   [How to list disks, partitions and filesystems in Linux?](https://unix.stackexchange.com/questions/157154/how-to-list-disks-partitions-and-filesystems-in-linux)
 -   [4 Ways to Check File Size in Linux](https://www.howtouselinux.com/post/check-file-size-in-linux)
+
+## Prompt Customization
+
+-   [Why is bash's prompt variable called PS1?](https://unix.stackexchange.com/questions/32096/why-is-bashs-prompt-variable-called-ps1)
+-   [Bash/Prompt Customization](https://wiki.archlinux.org/title/Bash/Prompt_customization)
+-   [Controlling the Prompt](https://www.gnu.org/software/bash/manual/html_node/Controlling-the-Prompt.html)
+-   [Why do commands starting with a space, not show up in bash history?](https://unix.stackexchange.com/questions/483701/why-do-commands-starting-with-a-space-not-show-up-in-bash-history)
