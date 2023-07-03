@@ -86,17 +86,30 @@
     then
     	echo "Hey Sel!"
     fi # ending if statement
+
+    # Or
+
+    if [[ "$NAME" == "Selena Gomez" ]]; then
+    	echo "Hey Sel!";
+    fi;
     ```
+
+    > NOTE:
+    >
+    > -   [More on `if`-`else`](https://linuxhandbook.com/if-else-bash)
+    > -   Quoting variables
+    >     -   [Difference between quoting variables in shell script "if" statements?](https://unix.stackexchange.com/questions/86800/difference-between-quoting-variables-in-shell-script-if-statements)
+    >     -   [When to wrap quotes around a shell variable?](https://stackoverflow.com/questions/10067266/when-to-wrap-quotes-around-a-shell-variable)
 
 > [Difference between `()`, `(())`, `[]` and `[[]]`](https://superuser.com/questions/1533900/difference-between-and-or-and-in-bash)
 
 -   If-elif-else statement
 
     ```bash
-    if [ "$NAME" == "Selena Gomez" ] # The spaces are important!
+    if [[ "$NAME" == "Selena Gomez" ]] # The spaces are important!
     then
     	echo "Selly!"
-    elif [ "$NAME" == "Selena" ]
+    elif [[ "$NAME" == "Selena" ]]
     then
     	echo "Yay it's Sel!"
     else
@@ -124,7 +137,13 @@
     fi
     ```
 
-    > [Understanding boolean operators in bash script](https://unix.stackexchange.com/questions/105935/understanding-boolean-operators-in-bash-script)
+    > NOTE:
+    >
+    > -   [Understanding boolean operators in bash script](https://unix.stackexchange.com/questions/105935/understanding-boolean-operators-in-bash-script)
+    > -   Comparisons
+    >     -   For string comparisons, use `>`, `<`, `==` (Bash) or `=` (Bash and Shell)
+    >     -   For numerical comparisons, use `-eq`, `-lt`, `-gt`, etc.
+    >     -   [Shell equality operators (`=`, `==`, `-eq`)](https://stackoverflow.com/questions/20449543/shell-equality-operators-eq)
 
 -   File conditions
 
@@ -141,12 +160,11 @@
     ```bash
     FILE="text.txt"
 
-    if [ -f "$FILE" ]
-    then
-    	echo "$FILE is a file!"
-    else
-    	echo "$FILE is not a file : ("
-    fi
+    if [[ -f "$FILE" ]]; then
+    	echo "$FILE is a file!";
+    elif [[ ! -f "$FILE" ]]; then
+    	echo "$FILE is not a file : (";
+    fi;
     ```
 
 -   Case statements
@@ -281,4 +299,7 @@
     ```
 
 -   Arrays
+
     -   [Convert a text string in bash to array](https://stackoverflow.com/questions/19657683/convert-a-text-string-in-bash-to-array)
+
+-   [Parsing command-line arguments](https://stackoverflow.com/questions/192249/how-do-i-parse-command-line-arguments-in-bash)
