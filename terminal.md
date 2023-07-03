@@ -15,6 +15,9 @@
 -   [Creating Files](#creating-files)
 -   [Redirecting Output](#redirecting-output)
 -   [Editing a File](#editing-a-file)
+    -   [Vi](#vi)
+    -   [Vim](#vim)
+    -   [Nano](#nano)
 -   [Reading File Content](#reading-file-content)
 -   [Copying and Moving Files](#copying-and-moving-files)
 -   [Renaming Files](#renaming-files)
@@ -194,7 +197,7 @@ $ pwd
 
 ```bash
 $ pwd
-/home/username
+/home/username/
 
 $ # providing an absolute path as argument
 $ cd /etc
@@ -503,7 +506,7 @@ $ mkdir -p public/css/summary public/html
     ```bash
     $ vi sample.txt
     ```
--   Vim Text Editor
+-   [Vim](#vim) Text Editor
     ```bash
     $ vim sample.txt
     ```
@@ -511,7 +514,16 @@ $ mkdir -p public/css/summary public/html
     ```bash
     $ nano sample.txt
     ```
-    Jump to [Editing Files](#edit-files) for more details.
+    Jump to [Editing a File](#editing-a-file) for more details.
+
+### Symbolic Links
+
+-   [What is Symbolic Links in Linux? How to Create Symbolic Links?](https://linuxhandbook.com/symbolic-link-linux/#things-to-keep-in-mind-about-symbolic-links)
+-	[What is the difference between a symbolic link and a hard link?](https://stackoverflow.com/questions/185899/what-is-the-difference-between-a-symbolic-link-and-a-hard-link)
+
+```bash
+$ ln --symbolic /actual/file/location.ext /symlink/location.ext
+```
 
 ## Redirecting output
 
@@ -560,6 +572,7 @@ Eg: `ls -al >> listings.txt` will append the output of command ls -al is re-dire
     -   [Dotfiles (`.vimrc`)](https://github.com/HarshKapadia2/dotfiles)
 -   [Find and Replace in Vim / Vi](https://linuxize.com/post/vim-find-replace)
     -   [More on Regular Expression](https://harshkapadia2.github.io/regex)
+    -   NOTE: Vim will only replace the first occurrence of a string in a sentence by default. To change all occurrences, add the `g` option at the end. Eg: `:0,$s/old-text/new-text/g`
 -   [Getting Started with Vim: An Interactive Guide](https://scotch.io/tutorials/getting-started-with-vim-an-interactive-guide)
 -   [Tips on Window Management in Vim](https://advancedweb.hu/tips-on-window-management-in-vim)
 -   [How to add text at the end of each line in Vim?](https://stackoverflow.com/questions/11303032/how-to-add-text-at-the-end-of-each-line-in-vim)
