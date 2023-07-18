@@ -10,6 +10,7 @@
 -   [Shell scripting crash course (beginners)](https://www.youtube.com/watch?v=v-F3YLd6oMw)
 -   [Absolute vs Relative Path in Linux: What's the Difference?](https://linuxhandbook.com/absolute-vs-relative-path)
 -   [The Missing Semester of Your CS Education](https://missing.csail.mit.edu)
+-   [Google's Shell Style Guide](https://google.github.io/styleguide/shellguide.html)
 -   [Shell Script Best Practices](https://sharats.me/posts/shell-script-best-practices)
 -   [Advanced Bash-Scripting Guide](https://tldp.org/LDP/abs/html/index.html)
 -   Check Shell scripts: [shellcheck.net](https://www.shellcheck.net)
