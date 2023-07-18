@@ -571,12 +571,19 @@ Eg: `ls -al >> listings.txt` will append the output of command ls -al is re-dire
 
 -   [Basic guide to Vim](https://missing.csail.mit.edu/2020/editors)
     -   [Dotfiles (`.vimrc`)](https://github.com/HarshKapadia2/dotfiles)
+    -   [Vim documentation](https://vimhelp.org)
 -   [Find and Replace in Vim / Vi](https://linuxize.com/post/vim-find-replace)
     -   [More on Regular Expression](https://harshkapadia2.github.io/regex)
     -   NOTE: Vim will only replace the first occurrence of a string in a sentence by default. To change all occurrences, add the `g` option at the end. Eg: `:0,$s/old-text/new-text/g`
 -   [Getting Started with Vim: An Interactive Guide](https://scotch.io/tutorials/getting-started-with-vim-an-interactive-guide)
 -   [Tips on Window Management in Vim](https://advancedweb.hu/tips-on-window-management-in-vim)
 -   [How to add text at the end of each line in Vim?](https://stackoverflow.com/questions/11303032/how-to-add-text-at-the-end-of-each-line-in-vim)
+-   Plugins
+    -   [A brief history of plugin management using Vim](https://stackoverflow.com/a/13025493/11958552)
+    -   Choices between various plugin systems/managers
+        -   [How do I install a plugin in Vim/vi?](https://vi.stackexchange.com/questions/613/how-do-i-install-a-plugin-in-vim-vi)
+        -   [What are the differences between the Vim plugin managers?](https://vi.stackexchange.com/questions/388/what-are-the-differences-between-the-vim-plugin-managers)
+    -   [Dotfiles (`.vimrc`) with plugins](https://github.com/HarshKapadia2/dotfiles)
 
 ### Nano
 
