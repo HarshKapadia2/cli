@@ -320,3 +320,4 @@
 -   Built-in Shell variables
     -   [Built-in Shell variables `$#`, `$*`, etc](https://superuser.com/a/247131)
     -   [Special parameters](https://pubs.opengroup.org/onlinepubs/9699919799/utilities/V3_chap02.html#tag_18_05_02)
+-   [Environment variables](https://unix.stackexchange.com/questions/495161/import-environment-variables-in-a-bash-script)
