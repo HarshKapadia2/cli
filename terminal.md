@@ -18,16 +18,22 @@
     -   [Vi](#vi)
     -   [Vim](#vim)
     -   [Nano](#nano)
+-   [Terminal Multiplexers](#terminal-multiplexers)
+    -   [tmux](#tmux)
 -   [Reading File Content](#reading-file-content)
 -   [Copying and Moving Files](#copying-and-moving-files)
 -   [Renaming Files](#renaming-files)
 -   [Deleting Files and Directories](#deleting-files--directories)
 -   [Chaining Commands](#chaining-commands)
--   [Finding Strings and Counting Occurences](#finding-strings-and-counting-occurences)
+-   [Finding Strings and Counting Occurrences](#finding-strings-and-counting-occurrences)
     -   [grep](#grep)
 -   [AWK](#awk)
--   [Disk and File Size](#disk-and-file-size)
+-   [Disks, USBs and Files](#disks-usbs-and-files)
 -   [Prompt customization](#prompt-customization)
+-   [Periodically Running Tasks](#periodically-running-tasks)
+    -   [CRON Jobs](#cron-jobs)
+-   [Making Requests from the Command Line](#making-requests-from-the-command-line)
+    -   [Curl](#curl)
 
 ## Opening the Terminal
 
@@ -596,6 +602,15 @@ Eg: `ls -al >> listings.txt` will append the output of command ls -al is re-dire
     > -   Enter some text, then press <kbd>Ctrl</kbd>+<kbd>O</kbd> to save the changes.
     > -   Press <kbd>Ctrl</kbd>+<kbd>X</kbd> to exit the editor.
 
+## Terminal Multiplexers
+
+[Terminal multiplexer introduction](https://missing.csail.mit.edu/2020/command-line/#terminal-multiplexers)
+
+### tmux
+
+-   [tmux introduction](https://missing.csail.mit.edu/2020/command-line/#terminal-multiplexers)
+-   [Cheat sheet](https://tmuxcheatsheet.com)
+
 ## Reading file content
 
 ### cat
@@ -745,7 +760,7 @@ $ command1 ; command2
 
 -   This will run will run command_1 and then run command_2 even if command_1 did not finish successfully.
 
-## Finding Strings and Counting Occurences
+## Finding Strings and Counting Occurrences
 
 ### `grep`
 
@@ -1182,10 +1197,11 @@ $ command1 ; command2
     106     Mukesh
     ```
 
-## Disk and File Size
+## Disks, USBs and Files
 
 -   [How to list disks, partitions and filesystems in Linux?](https://unix.stackexchange.com/questions/157154/how-to-list-disks-partitions-and-filesystems-in-linux)
 -   [4 Ways to Check File Size in Linux](https://www.howtouselinux.com/post/check-file-size-in-linux)
+-   [How to access a usb flash drive from the terminal?](https://askubuntu.com/questions/37767/how-to-access-a-usb-flash-drive-from-the-terminal)
 
 ## Prompt Customization
 
@@ -1193,3 +1209,18 @@ $ command1 ; command2
 -   [Bash/Prompt Customization](https://wiki.archlinux.org/title/Bash/Prompt_customization)
 -   [Controlling the Prompt](https://www.gnu.org/software/bash/manual/html_node/Controlling-the-Prompt.html)
 -   [Why do commands starting with a space, not show up in bash history?](https://unix.stackexchange.com/questions/483701/why-do-commands-starting-with-a-space-not-show-up-in-bash-history)
+
+## Periodically Running Tasks
+
+### CRON Jobs
+
+-   [Scheduling Cron Jobs with Crontab](https://linuxize.com/post/scheduling-cron-jobs-with-crontab)
+-   [How to Run Cron Jobs Every 5, 10, or 15 Minutes](https://linuxize.com/post/cron-jobs-every-5-10-15-minutes)
+-   [How to view a cron job running currently?](https://stackoverflow.com/questions/36882991/how-to-view-a-cron-job-running-currently)
+-   [Run Crontab in directory](https://stackoverflow.com/a/64450726/11958552)
+
+## Making Requests from the Command Line
+
+### Curl
+
+-   [Mastering the Curl Command Line](https://daniel.haxx.se/blog/2023/08/08/mastering-the-curl-command-line)
