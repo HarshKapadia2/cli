@@ -93,14 +93,22 @@
     if [[ "$NAME" == "Selena Gomez" ]]; then
     	echo "Hey Sel!";
     fi;
+
+    if command -v "apt-get" > /dev/null; then
+    	echo "The command 'apt-get' is available!"
+    else
+    	echo "The command 'apt-get' is not available."
+    fi # From: https://unix.stackexchange.com/a/602841
     ```
 
     > NOTE:
     >
     > -   [More on `if`-`else`](https://linuxhandbook.com/if-else-bash)
+    > -   [When are square brackets required in a Bash if statement?](https://stackoverflow.com/questions/8934012/when-are-square-brackets-required-in-a-bash-if-statement)
     > -   Quoting variables
     >     -   [Difference between quoting variables in shell script "if" statements?](https://unix.stackexchange.com/questions/86800/difference-between-quoting-variables-in-shell-script-if-statements)
     >     -   [When to wrap quotes around a shell variable?](https://stackoverflow.com/questions/10067266/when-to-wrap-quotes-around-a-shell-variable)
+    > -   [What is the bash command: `command`?](https://askubuntu.com/questions/512770/what-is-the-bash-command-command)
 
 > [Difference between `()`, `(())`, `[]` and `[[]]`](https://superuser.com/questions/1533900/difference-between-and-or-and-in-bash)
 
@@ -145,6 +153,7 @@
     >     -   For string comparisons, use `>`, `<`, `==` (Bash) or `=` (Bash and Shell)
     >     -   For numerical comparisons, use `-eq`, `-lt`, `-gt`, etc.
     >     -   [Shell equality operators (`=`, `==`, `-eq`)](https://stackoverflow.com/questions/20449543/shell-equality-operators-eq)
+    >     -   [How do I negate a test with regular expressions in a bash script?](https://stackoverflow.com/questions/4542732/how-do-i-negate-a-test-with-regular-expressions-in-a-bash-script)
 
 -   File conditions
 
@@ -252,7 +261,10 @@
 
     ```
 
-> The asterisk (`*`) is a catchall to match any and all characters. ([More info](<https://www.livefirelabs.com/unix_tip_trick_shell_script/unix_operating_system_fundamentals/unix-special-characters.htm#:~:text=metacharacters%20are%20%22*%22%2C%20%22%3F%22%2C%20%22%5B%5D%22%2C%20and%20%22%2D%22.-,The%20Asterisk,-The%20*%20(asterisk)%20metacharacter>))
+> NOTE:
+>
+> -   The asterisk (`*`) is a catchall to match any and all characters. ([More info](<https://www.livefirelabs.com/unix_tip_trick_shell_script/unix_operating_system_fundamentals/unix-special-characters.htm#:~:text=metacharacters%20are%20%22*%22%2C%20%22%3F%22%2C%20%22%5B%5D%22%2C%20and%20%22%2D%22.-,The%20Asterisk,-The%20*%20(asterisk)%20metacharacter>))
+> -   [Delete the last character of a string using string manipulation in shell script (`${var::-1}`)](https://unix.stackexchange.com/questions/144298/delete-the-last-character-of-a-string-using-string-manipulation-in-shell-script)
 
 -   Internal Field Separator (IFS)
 
@@ -304,3 +316,7 @@
     -   [Convert a text string in bash to array](https://stackoverflow.com/questions/19657683/convert-a-text-string-in-bash-to-array)
 
 -   [Parsing command-line arguments](https://stackoverflow.com/questions/192249/how-do-i-parse-command-line-arguments-in-bash)
+-   [`set` in Bash to set and clear arguments and `set --`](https://unix.stackexchange.com/questions/378566/ways-to-set-positional-parameters-in-bash)
+-   Built-in Shell variables
+    -   [Built-in Shell variables `$#`, `$*`, etc](https://superuser.com/a/247131)
+    -   [Special parameters](https://pubs.opengroup.org/onlinepubs/9699919799/utilities/V3_chap02.html#tag_18_05_02)
