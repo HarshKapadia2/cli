@@ -372,7 +372,8 @@ $ ./file_to_run
     2 directories, 5 files
     ```
 
-    -   Use `which` to find the location of a file.
+    -   Use `which` or `command -v` to find the location of a file.
+        -   ['which' vs 'command -v' in Bash](https://stackoverflow.com/questions/37056192/which-vs-command-v-in-bash)
 
     ```bash
     $ which bash
@@ -465,6 +466,7 @@ $ mkdir -p public/css/summary public/html
     ```bash
     $ cat > sample.txt
     ```
+-   Te command `tac` (reverse of `cat`) can be used to print file contents backwards.
 
 ### `echo` command
 

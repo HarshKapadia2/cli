@@ -33,8 +33,13 @@
         -   `sh script.sh`
     -   [Difference between `./script.sh` and `sh script.sh`.](https://unix.stackexchange.com/a/136550)
         -   [About the Use of Dot-Slash (`./`) in Commands](http://www.linfo.org/dot_slash.html)
+    -   [What is the difference between sourcing ('.' or 'source') and executing a file in bash? (`./test.sh` vs `. ./test.sh` or `source ./test.sh`)]
+        -   [What does 'source' do?](https://superuser.com/questions/46139/what-does-source-do)
+        -   [What is the difference between executing a Bash script vs sourcing it?](https://superuser.com/questions/176783/what-is-the-difference-between-executing-a-bash-script-vs-sourcing-it)
 
 -   Error handling (`set -Eeuo pipefail`, `trap`, etc.): [How to Trap Errors in Bash Scripts on Linux](https://www.howtogeek.com/821320/how-to-trap-errors-in-bash-scripts-on-linux)
+
+-   Debugging/printing commands to terminal: [What does `set -x` do?](https://stackoverflow.com/questions/36273665/what-does-set-x-do)
 
 -   Output to terminal
 
@@ -109,6 +114,7 @@
     >     -   [Difference between quoting variables in shell script "if" statements?](https://unix.stackexchange.com/questions/86800/difference-between-quoting-variables-in-shell-script-if-statements)
     >     -   [When to wrap quotes around a shell variable?](https://stackoverflow.com/questions/10067266/when-to-wrap-quotes-around-a-shell-variable)
     > -   [What is the bash command: `command`?](https://askubuntu.com/questions/512770/what-is-the-bash-command-command)
+    >     -   ['which' vs 'command -v' in Bash](https://stackoverflow.com/questions/37056192/which-vs-command-v-in-bash)
 
 > [Difference between `()`, `(())`, `[]` and `[[]]`](https://superuser.com/questions/1533900/difference-between-and-or-and-in-bash)
 
@@ -286,6 +292,7 @@
     -   Custom values can be set.
     -   [More info and use cases](https://www.baeldung.com/linux/ifs-shell-variable)
     -   [Unset IFS - unexpected behaviour](https://stackoverflow.com/a/58511401/11958552)
+    -   [How do I split a string on a delimiter in Bash?](https://stackoverflow.com/questions/918886/how-do-i-split-a-string-on-a-delimiter-in-bash)
 
 -   Functions
 
@@ -299,6 +306,11 @@
 
     > -   [More about Bash Functions](https://linuxize.com/post/bash-functions)
     > -   [How to store output of a function in a variable in bash](https://stackoverflow.com/questions/64724576/how-to-store-output-of-a-function-in-a-variable-in-bash)
+    > -   [Return value in a Bash function](https://stackoverflow.com/questions/17336915/return-value-in-a-bash-function)
+    > -   [How to pass array as an argument to a function in Bash](https://stackoverflow.com/questions/16461656/how-to-pass-array-as-an-argument-to-a-function-in-bash)
+    > -   [Passing arrays as parameters in bash](https://stackoverflow.com/questions/1063347/passing-arrays-as-parameters-in-bash)
+    > -   [Access arguments to Bash script inside a function](https://stackoverflow.com/questions/3966048/access-arguments-to-bash-script-inside-a-function)
+    >     -   [How to access command line arguments of the caller inside a function?](https://stackoverflow.com/questions/2740906/how-to-access-command-line-arguments-of-the-caller-inside-a-function)
 
 -   Create a folder and write to a file
 
@@ -313,7 +325,12 @@
 
 -   Arrays
 
+    -   [Using Arrays in Bash](https://linuxhandbook.com/bash-arrays)
+    -   [How to split a string into an array in Bash?](https://stackoverflow.com/questions/10586153/how-to-split-a-string-into-an-array-in-bash)
+    -   [How do I split a string on a delimiter in Bash?](https://stackoverflow.com/questions/918886/how-do-i-split-a-string-on-a-delimiter-in-bash)
+    -   [Double quote array expansions to avoid re-splitting elements.](https://www.shellcheck.net/wiki/SC2068)
     -   [Convert a text string in bash to array](https://stackoverflow.com/questions/19657683/convert-a-text-string-in-bash-to-array)
+    -   [Appending to Arrays in Bash](https://linuxhandbook.com/bash-append-array)
 
 -   [Parsing command-line arguments](https://stackoverflow.com/questions/192249/how-do-i-parse-command-line-arguments-in-bash)
 -   [`set` in Bash to set and clear arguments and `set --`](https://unix.stackexchange.com/questions/378566/ways-to-set-positional-parameters-in-bash)
