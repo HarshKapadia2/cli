@@ -25,6 +25,7 @@
 -   [Renaming Files](#renaming-files)
 -   [Deleting Files and Directories](#deleting-files--directories)
 -   [Chaining Commands](#chaining-commands)
+-   [Gathering System Information](#gathering-system-information)
 -   [Finding Strings and Counting Occurrences](#finding-strings-and-counting-occurrences)
     -   [grep](#grep)
 -   [AWK](#awk)
@@ -761,6 +762,41 @@ $ command1 ; command2
 ```
 
 -   This will run will run command_1 and then run command_2 even if command_1 did not finish successfully.
+
+## Gathering System Information
+
+-   CPU
+    -   No. of cores, no. of sockets, SMT on/off, CPU speed/frequency: `lscpu`
+    -   CPU topology and/or NUMA config
+        -   `lscpu`
+        -   `lstopo` (enable X11 Forwarding for GUI!)
+            -   [Interpret the output of lstopo](https://unix.stackexchange.com/questions/113544/interpret-the-output-of-lstopo)
+        -   `numactl`
+-   OS and Kernel versions
+    -   OS version
+        -   `lsb_release -a` (Will not work for all Linux distributions.)
+        -   `cat /etc/os-release`
+    -   Kernel version: `uname -srm`
+    -   [4 Useful Commands to Check Linux Version](https://www.howtouselinux.com/post/check-linux-version)
+-   BIOS
+    -   `sudo dmidecode -t bios` ([More details](https://www.baeldung.com/linux/get-bios-data))
+-   Memory (RAM) config
+    -   Speed: `sudo dmidecode -t memory`
+    -   `free -h`
+    -   [How to Determine the Number of RAM Slots in Use](https://www.baeldung.com/linux/ram-slots-in-use)
+    -   DIMMS per channel (DPC): `sudo dmidecode -t memory | grep "Bank Locator"`
+    -   [How do I tell if my Memory is ECC or Non-ECC?](https://superuser.com/questions/893560/how-do-i-tell-if-my-memory-is-ecc-or-non-ecc)
+-   Storage (disk)
+    -   `df -h`
+    -   `lsblk`
+    -   `fdisk -l`
+-   Network
+    -   `ip a`
+-   Motherboard
+    -   `sudo dmidecode -t baseboard`
+    -   `ipmitool`
+-   Generic commands: `htop`, `lstopo` (enable X11 Forwarding!)
+-   [CPU-Z](https://www.cpuid.com/softwares/cpu-z.html) (Windows) or CPU-X (Linux)
 
 ## Finding Strings and Counting Occurrences
 

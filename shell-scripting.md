@@ -49,7 +49,6 @@
 
 -   Variables
 
-    -   Uppercase by convention
     -   Allowed: letters, numbers and underscores
 
     ```bash
@@ -77,6 +76,15 @@
         -   `${abc}` is variable/parameter substitution.
         -   `$(abc)` is command substitution and will execute whatever is inside the `()`, which means it is usually used to run a command or store the output of a command.
         -   [More info and good practices](https://superuser.com/a/935427)
+    -   [Parsing command-line arguments](https://stackoverflow.com/questions/192249/how-do-i-parse-command-line-arguments-in-bash)
+    -   [`set` in Bash to set and clear arguments and `set --`](https://unix.stackexchange.com/questions/378566/ways-to-set-positional-parameters-in-bash)
+    -   Built-in Shell variables
+        -   [Built-in Shell variables `$#`, `$*`, etc](https://superuser.com/a/247131)
+        -   [Special parameters](https://pubs.opengroup.org/onlinepubs/9699919799/utilities/V3_chap02.html#tag_18_05_02)
+    -   [Environment variables](https://unix.stackexchange.com/questions/495161/import-environment-variables-in-a-bash-script)
+    -   Output redirection
+        -   [What does " 2>&1 " mean?](https://stackoverflow.com/questions/818255/what-does-21-mean)
+        -   [How does cmd > /dev/null 2>&1 work?](https://stackoverflow.com/questions/16995425/how-does-cmd-dev-null-21-work)
 
 -   User input
 
@@ -331,10 +339,3 @@
     -   [Double quote array expansions to avoid re-splitting elements.](https://www.shellcheck.net/wiki/SC2068)
     -   [Convert a text string in bash to array](https://stackoverflow.com/questions/19657683/convert-a-text-string-in-bash-to-array)
     -   [Appending to Arrays in Bash](https://linuxhandbook.com/bash-append-array)
-
--   [Parsing command-line arguments](https://stackoverflow.com/questions/192249/how-do-i-parse-command-line-arguments-in-bash)
--   [`set` in Bash to set and clear arguments and `set --`](https://unix.stackexchange.com/questions/378566/ways-to-set-positional-parameters-in-bash)
--   Built-in Shell variables
-    -   [Built-in Shell variables `$#`, `$*`, etc](https://superuser.com/a/247131)
-    -   [Special parameters](https://pubs.opengroup.org/onlinepubs/9699919799/utilities/V3_chap02.html#tag_18_05_02)
--   [Environment variables](https://unix.stackexchange.com/questions/495161/import-environment-variables-in-a-bash-script)
