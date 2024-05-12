@@ -586,6 +586,7 @@ Eg: `ls -al >> listings.txt` will append the output of command ls -al is re-dire
     -   NOTE: Vim will only replace the first occurrence of a string in a sentence by default. To change all occurrences, add the `g` option at the end. Eg: `:0,$s/old-text/new-text/g`
 -   [Getting Started with Vim: An Interactive Guide](https://scotch.io/tutorials/getting-started-with-vim-an-interactive-guide)
 -   [Tips on Window Management in Vim](https://advancedweb.hu/tips-on-window-management-in-vim)
+-   [Using buffers, windows, and tabs efficiently in Vim](https://dev.to/iggredible/using-buffers-windows-and-tabs-efficiently-in-vim-56jc)
 -   [How to add text at the end of each line in Vim?](https://stackoverflow.com/questions/11303032/how-to-add-text-at-the-end-of-each-line-in-vim)
 -   Plugins
     -   [A brief history of plugin management using Vim](https://stackoverflow.com/a/13025493/11958552)
