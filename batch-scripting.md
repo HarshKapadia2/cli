@@ -8,6 +8,10 @@
 -   [Command prompt in Windows and Linux -- What is their language called?](https://superuser.com/questions/349481/command-prompt-in-windows-and-linux-what-is-their-language-called)
     -   Good history here
 
+## Variables
+
+-   [What is the difference between SETX and SET in environment variables in Windows](https://superuser.com/questions/916649/what-is-the-difference-between-setx-and-set-in-environment-variables-in-windows)
+
 ## Loops
 
 -   [How do you loop in a Windows batch file?](https://stackoverflow.com/questions/1355791/how-do-you-loop-in-a-windows-batch-file)

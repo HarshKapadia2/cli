@@ -9,6 +9,7 @@
 -   [Basic Commands](#basic-commands)
 -   [Package Manager](#package-manager)
 -   [Run files on cmd](#run-files-on-cmd)
+-   [Killing a Program](#killing-a-program)
 -   [Listing directory contents & directory structure](#listing-directory-contents--directory-structure)
 -   [Changing Permissions](#changing-permissions)
 -   [Creating Directories](#creating-directories)
@@ -26,6 +27,7 @@
 -   [Deleting Files and Directories](#deleting-files--directories)
 -   [Chaining Commands](#chaining-commands)
 -   [Gathering System Information](#gathering-system-information)
+-   [Monitoring System](#monitoring-system)
 -   [Finding Strings and Counting Occurrences](#finding-strings-and-counting-occurrences)
     -   [grep](#grep)
 -   [AWK](#awk)
@@ -200,6 +202,7 @@ $ pwd
 
 -   Use `clear` or <kbd>Ctrl</kbd> + <kbd>L</kbd> to clear the screen of the cmd.
 -   Use `history` to view the last 500 commands executed on the terminal.
+    -   [An Actionable Guide to The Linux History Command](https://www.redswitches.com/blog/linux-history-command/#Correct-Mistakes-in-the-Executed-Command)
 
 ### Changing directories
 
@@ -304,6 +307,16 @@ $ # This might prompt you with a Y (yes) or n (no) option.
 ```bash
 $ ./file_to_run
 ```
+
+-   [How can I resume a stopped job in Linux?](https://superuser.com/questions/268230/how-can-i-resume-a-stopped-job-in-linux)
+
+## Killing a Program
+
+-   [What is the difference between `kill`, `pkill` and `killall`?](https://unix.stackexchange.com/questions/252349/what-is-the-difference-between-kill-pkill-and-killall)
+    -   `pkill` uses `pgrep` under the hood and kills process names that match a pattern. ([Source](https://unix.stackexchange.com/a/716965))
+-   [How to kill a process by its pid in linux](https://stackoverflow.com/questions/32926740/how-to-kill-a-process-by-its-pid-in-linux)
+    -   [If I know the PID number of a process, how can I get its name?](https://superuser.com/questions/632979/if-i-know-the-pid-number-of-a-process-how-can-i-get-its-name)
+-   [How To Use ps, kill, and nice to Manage Processes in Linux](https://www.digitalocean.com/community/tutorials/how-to-use-ps-kill-and-nice-to-manage-processes-in-linux)
 
 ## Listing directory contents & directory structure
 
@@ -552,10 +565,11 @@ Eg: `ls -al >> listings.txt` will append the output of command ls -al is re-dire
 ### Redirect to another command
 
 -   Sometimes, it can be useful to use the output of one command as the input to another command. This can be achieved using **pipes**.
-
--   A pipe is created using the pip character (`|`).
-
+-   A pipe is created using the pipe character (`|`).
 -   Eg: To display output of a directory listing one page at a time, use `ls -la | less`.
+-   Pipe parallelism
+    -   [Does piping executes commands in parallel?](https://superuser.com/questions/1455438/does-piping-executes-commands-in-parallel)
+    -   [Make sure not to read and write the same file in the same pipeline.](https://www.shellcheck.net/wiki/SC2094)
 
 ## Editing a file
 
@@ -627,9 +641,12 @@ Eg: `ls -al >> listings.txt` will append the output of command ls -al is re-dire
 ### less
 
 -   displays contents of a file, automatically fits to size of Terminal, allows scrolling in either direction and other options for effective viewing
+
     ```bash
     $ less sample.txt
     ```
+
+-   [Differences Between `more`, `less`, and most` in Linux](https://www.baeldung.com/linux/more-less-most-commands)
 
 ### head
 
@@ -798,6 +815,11 @@ $ command1 ; command2
     -   `ipmitool`
 -   Generic commands: `htop`, `lstopo` (enable X11 Forwarding!)
 -   [CPU-Z](https://www.cpuid.com/softwares/cpu-z.html) (Windows) or CPU-X (Linux)
+
+## Monitoring System
+
+-   `htop`
+    -   [How to compress or hide the processors at top of htop on large machines?](https://superuser.com/questions/806614/how-to-compress-or-hide-the-processors-at-top-of-htop-on-large-machines)
 
 ## Finding Strings and Counting Occurrences
 

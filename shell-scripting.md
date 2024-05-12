@@ -80,6 +80,7 @@
     -   [`set` in Bash to set and clear arguments and `set --`](https://unix.stackexchange.com/questions/378566/ways-to-set-positional-parameters-in-bash)
     -   Built-in Shell variables
         -   [Built-in Shell variables `$#`, `$*`, etc](https://superuser.com/a/247131)
+        -   [What is the difference between "$@" and "$\*" in Bash?](https://stackoverflow.com/questions/3008695/what-is-the-difference-between-and-in-bash)
         -   [Special parameters](https://pubs.opengroup.org/onlinepubs/9699919799/utilities/V3_chap02.html#tag_18_05_02)
     -   [Environment variables](https://unix.stackexchange.com/questions/495161/import-environment-variables-in-a-bash-script)
     -   Output redirection
@@ -180,6 +181,7 @@
     -   `-u` True if the user id is set on a file
     -   `-w` True if the file is writable
     -   `-x` True if the file is an executable
+    -   `-L` True if a symlink exists (The actual file being symlinked to may or may not exist.) ([Source](https://stackoverflow.com/questions/5767062/how-to-check-if-a-symlink-exists))
 
     ```bash
     FILE="text.txt"
@@ -334,8 +336,9 @@
 -   Arrays
 
     -   [Using Arrays in Bash](https://linuxhandbook.com/bash-arrays)
+    -   [Bash For Loop Array: Iterate Through Array Values](https://www.cyberciti.biz/faq/bash-for-loop-array)
+    -   [Appending to Arrays in Bash](https://linuxhandbook.com/bash-append-array)
     -   [How to split a string into an array in Bash?](https://stackoverflow.com/questions/10586153/how-to-split-a-string-into-an-array-in-bash)
     -   [How do I split a string on a delimiter in Bash?](https://stackoverflow.com/questions/918886/how-do-i-split-a-string-on-a-delimiter-in-bash)
     -   [Double quote array expansions to avoid re-splitting elements.](https://www.shellcheck.net/wiki/SC2068)
     -   [Convert a text string in bash to array](https://stackoverflow.com/questions/19657683/convert-a-text-string-in-bash-to-array)
-    -   [Appending to Arrays in Bash](https://linuxhandbook.com/bash-append-array)
