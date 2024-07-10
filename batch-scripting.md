@@ -7,6 +7,7 @@
 -   [Windows batch files: .bat vs .cmd?](https://stackoverflow.com/a/149918)
 -   [Command prompt in Windows and Linux -- What is their language called?](https://superuser.com/questions/349481/command-prompt-in-windows-and-linux-what-is-their-language-called)
     -   Good history here
+-   [Batch file commands: Windows/DOS](https://www.trytoprogram.com/batch-file-commands)
 
 ## Variables
 
