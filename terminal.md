@@ -317,6 +317,8 @@ $ ./file_to_run
 -   [How to kill a process by its pid in linux](https://stackoverflow.com/questions/32926740/how-to-kill-a-process-by-its-pid-in-linux)
     -   [If I know the PID number of a process, how can I get its name?](https://superuser.com/questions/632979/if-i-know-the-pid-number-of-a-process-how-can-i-get-its-name)
 -   [How To Use ps, kill, and nice to Manage Processes in Linux](https://www.digitalocean.com/community/tutorials/how-to-use-ps-kill-and-nice-to-manage-processes-in-linux)
+-   [How to kill a process running on particular port in Linux?](https://stackoverflow.com/questions/11583562/how-to-kill-a-process-running-on-particular-port-in-linux)
+-   [How can I resume a stopped job in Linux?](https://superuser.com/questions/268230/how-can-i-resume-a-stopped-job-in-linux)
 
 ## Listing directory contents & directory structure
 
