@@ -254,7 +254,7 @@
 
 > [Difference between `()`, `(())`, `[]` and `[[]]`](https://superuser.com/questions/1533900/difference-between-and-or-and-in-bash)
 
--   String manipulation
+-   String manipulation and sub-strings
 
     -   Delete the shortest `substring` match from the front of `${str}`: `${str#substring}`
     -   Delete the shortest `substring` match from the back of `${str}`: `${str%substring}`
@@ -277,10 +277,12 @@
 
     ```
 
+    -   [Get a sub-string based on index numbers (`${str:start_idx:substr_length}`)](https://www.baeldung.com/linux/bash-substring#3-using-bashs-substring-expansion)
+    -   [Delete the last character of a string using string manipulation in shell script (`${var::-1}`)](https://unix.stackexchange.com/questions/144298/delete-the-last-character-of-a-string-using-string-manipulation-in-shell-script)
+
 > NOTE:
 >
 > -   The asterisk (`*`) is a catchall to match any and all characters. ([More info](<https://www.livefirelabs.com/unix_tip_trick_shell_script/unix_operating_system_fundamentals/unix-special-characters.htm#:~:text=metacharacters%20are%20%22*%22%2C%20%22%3F%22%2C%20%22%5B%5D%22%2C%20and%20%22%2D%22.-,The%20Asterisk,-The%20*%20(asterisk)%20metacharacter>))
-> -   [Delete the last character of a string using string manipulation in shell script (`${var::-1}`)](https://unix.stackexchange.com/questions/144298/delete-the-last-character-of-a-string-using-string-manipulation-in-shell-script)
 
 -   Internal Field Separator (IFS)
 
