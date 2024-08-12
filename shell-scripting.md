@@ -334,7 +334,6 @@
     ```
 
 -   Arrays
-
     -   [Using Arrays in Bash](https://linuxhandbook.com/bash-arrays)
     -   [Bash For Loop Array: Iterate Through Array Values](https://www.cyberciti.biz/faq/bash-for-loop-array)
     -   [Appending to Arrays in Bash](https://linuxhandbook.com/bash-append-array)
@@ -342,3 +341,5 @@
     -   [How do I split a string on a delimiter in Bash?](https://stackoverflow.com/questions/918886/how-do-i-split-a-string-on-a-delimiter-in-bash)
     -   [Double quote array expansions to avoid re-splitting elements.](https://www.shellcheck.net/wiki/SC2068)
     -   [Convert a text string in bash to array](https://stackoverflow.com/questions/19657683/convert-a-text-string-in-bash-to-array)
+    -   [What is the difference between "$@" and "$\*" in Bash?](https://stackoverflow.com/questions/3008695/what-is-the-difference-between-and-in-bash)
+    -   [Indexed (`declare -a`) and Associative (`declare -A`) arrays](https://unix.stackexchange.com/a/254374)
