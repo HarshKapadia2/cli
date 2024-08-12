@@ -809,14 +809,17 @@ $ command1 ; command2
 -   Storage (disk)
     -   `df -h`
     -   `lsblk`
-    -   `fdisk -l`
+    -   `sudo fdisk -l`
 -   Network
     -   `ip a`
+    -   `sudo lspci -vvv | grep -iE "network|ethernet" -A 30`
+        -   [More ways to list Network hardware](https://www.cyberciti.biz/faq/linux-list-network-cards-command)
 -   Motherboard
     -   `sudo dmidecode -t baseboard`
     -   `ipmitool`
 -   Generic commands: `htop`, `lstopo` (enable X11 Forwarding!)
 -   [CPU-Z](https://www.cpuid.com/softwares/cpu-z.html) (Windows) or CPU-X (Linux)
+-   [16 Commands to Check Hardware Information on Linux](https://www.binarytides.com/linux-commands-hardware-info)
 
 ## Monitoring System
 
