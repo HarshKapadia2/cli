@@ -117,13 +117,14 @@
 
     > NOTE:
     >
+    > -   [Use `if cmd; then ..` to check exit code, or `if [ "$(cmd)" = .. ]` to check output.](https://www.shellcheck.net/wiki/SC1014)
     > -   [More on `if`-`else`](https://linuxhandbook.com/if-else-bash)
     > -   [When are square brackets required in a Bash if statement?](https://stackoverflow.com/questions/8934012/when-are-square-brackets-required-in-a-bash-if-statement)
     > -   Quoting variables
     >     -   [Difference between quoting variables in shell script "if" statements?](https://unix.stackexchange.com/questions/86800/difference-between-quoting-variables-in-shell-script-if-statements)
     >     -   [When to wrap quotes around a shell variable?](https://stackoverflow.com/questions/10067266/when-to-wrap-quotes-around-a-shell-variable)
     > -   [What is the bash command: `command`?](https://askubuntu.com/questions/512770/what-is-the-bash-command-command)
-    >     -   ['which' vs 'command -v' in Bash](https://stackoverflow.com/questions/37056192/which-vs-command-v-in-bash)
+    >     -   [`which` vs `command -v` in Bash](https://stackoverflow.com/questions/37056192/which-vs-command-v-in-bash)
 
 > [Difference between `()`, `(())`, `[]` and `[[]]`](https://superuser.com/questions/1533900/difference-between-and-or-and-in-bash)
 

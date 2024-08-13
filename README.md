@@ -14,6 +14,7 @@ Command Line Interface (CLI) commands and keyboard shortcuts for Command Prompt 
 
 -   [The Missing Semester of Your CS Education](https://missing.csail.mit.edu)
 -   [ss64.com - Command line reference](https://ss64.com)
+-   [Read the Source Code of Shell Commands](https://www.baeldung.com/linux/read-source-code-shell-commands)
 -   [linux-insides](https://0xax.gitbooks.io/linux-insides/content)
 -   [WSL](https://gist.github.com/HarshKapadia2/714bba15f0f09d32c07cdde3c244be9f)
 -   [Windows Terminal](https://gist.github.com/HarshKapadia2/18daf23ab4a7d1cb9215ca9dc8b7099f)
