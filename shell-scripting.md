@@ -6,6 +6,7 @@
     -   `sh` = Bourne Shell
     -   `bash` = Bourne Again Shell
 -   Unix had the Bourne Shell, which was modified in Linux and is called Bash (Bourne Again SHell).
+-   [Bash Reference Manual](https://www.gnu.org/software/bash/manual/bash.html)
 -   [Unix vs Linux](https://www.guru99.com/difference-unix-vs-linux.html)
 -   [Shell scripting crash course (beginners)](https://www.youtube.com/watch?v=v-F3YLd6oMw)
 -   [Absolute vs Relative Path in Linux: What's the Difference?](https://linuxhandbook.com/absolute-vs-relative-path)
@@ -183,6 +184,7 @@
     -   `-w` True if the file is writable
     -   `-x` True if the file is an executable
     -   `-L` True if a symlink exists (The actual file being symlinked to may or may not exist.) ([Source](https://stackoverflow.com/questions/5767062/how-to-check-if-a-symlink-exists))
+    -   `-z` True if string length is zero
 
     ```bash
     FILE="text.txt"
@@ -278,6 +280,8 @@
 
     ```
 
+    -   [Parameter Expansion (Eg: `${parameter+str}`, `${parameter:?str}`)](https://pubs.opengroup.org/onlinepubs/9799919799/utilities/V3_chap02.html#tag_19_06_02)
+        -   [How to check if a variable is set in Bash (unset/unbound variable error)](https://stackoverflow.com/questions/3601515/how-to-check-if-a-variable-is-set-in-bash)
     -   [Get a sub-string based on index numbers (`${str:start_idx:substr_length}`)](https://www.baeldung.com/linux/bash-substring#3-using-bashs-substring-expansion)
     -   [Delete the last character of a string using string manipulation in shell script (`${var::-1}`)](https://unix.stackexchange.com/questions/144298/delete-the-last-character-of-a-string-using-string-manipulation-in-shell-script)
 
