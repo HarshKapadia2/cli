@@ -87,6 +87,8 @@
     -   Output redirection
         -   [What does " 2>&1 " mean?](https://stackoverflow.com/questions/818255/what-does-21-mean)
         -   [How does cmd > /dev/null 2>&1 work?](https://stackoverflow.com/questions/16995425/how-does-cmd-dev-null-21-work)
+        -   [Using grep with pipe and ampersand to filter errors from find](https://askubuntu.com/questions/24953/using-grep-with-pipe-and-ampersand-to-filter-errors-from-find)
+            -   `|&` is the shorthand of `2>&1 |`
 
 -   User input
 

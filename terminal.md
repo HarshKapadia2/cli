@@ -604,6 +604,7 @@ Eg: `ls -al >> listings.txt` will append the output of command ls -al is re-dire
 -   [Tips on Window Management in Vim](https://advancedweb.hu/tips-on-window-management-in-vim)
 -   [Using buffers, windows, and tabs efficiently in Vim](https://dev.to/iggredible/using-buffers-windows-and-tabs-efficiently-in-vim-56jc)
 -   [How to add text at the end of each line in Vim?](https://stackoverflow.com/questions/11303032/how-to-add-text-at-the-end-of-each-line-in-vim)
+-   [How can I use Vim as a hex editor?](https://vi.stackexchange.com/questions/2232/how-can-i-use-vim-as-a-hex-editor)
 -   Plugins
     -   [A brief history of plugin management using Vim](https://stackoverflow.com/a/13025493/11958552)
     -   Choices between various plugin systems/managers
