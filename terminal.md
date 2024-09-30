@@ -816,6 +816,7 @@ $ command1 ; command2
     -   List all interfaces: `ip a`
     -   Set interface up or down: `sudo ip link set <interface_name> <up_down>`
     -   Force machine to get IP using DHCP: `sudo dhclient`
+    -   [Change DNS Server in Ubuntu](https://learnubuntu.com/change-dns-server)
     -   `sudo lspci -vvv | grep -iE "network|ethernet" -A 30`
         -   [More ways to list Network hardware](https://www.cyberciti.biz/faq/linux-list-network-cards-command)
 -   Motherboard
