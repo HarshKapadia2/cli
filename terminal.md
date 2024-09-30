@@ -788,6 +788,7 @@ $ command1 ; command2
 
 -   CPU
     -   No. of cores, no. of sockets, SMT on/off, CPU speed/frequency: `lscpu`
+    -   Monitor frequency: `watch -n 0.1 "grep \"cpu MHz\" /proc/cpuinfo"`
     -   CPU topology and/or NUMA config
         -   `lscpu`
         -   `lstopo` (enable X11 Forwarding for GUI!)
@@ -802,7 +803,7 @@ $ command1 ; command2
 -   BIOS
     -   `sudo dmidecode -t bios` ([More details](https://www.baeldung.com/linux/get-bios-data))
 -   Memory (RAM) config
-    -   Speed: `sudo dmidecode -t memory`
+    -   Speed: `sudo dmidecode -t memory | grep -i "configured memory speed:"`
     -   `free -h`
     -   [How to Determine the Number of RAM Slots in Use](https://www.baeldung.com/linux/ram-slots-in-use)
     -   DIMMS per channel (DPC): `sudo dmidecode -t memory | grep "Bank Locator"`
@@ -812,7 +813,9 @@ $ command1 ; command2
     -   `lsblk`
     -   `sudo fdisk -l`
 -   Network
-    -   `ip a`
+    -   List all interfaces: `ip a`
+    -   Set interface up or down: `sudo ip link set <interface_name> <up_down>`
+    -   Force machine to get IP using DHCP: `sudo dhclient`
     -   `sudo lspci -vvv | grep -iE "network|ethernet" -A 30`
         -   [More ways to list Network hardware](https://www.cyberciti.biz/faq/linux-list-network-cards-command)
 -   Motherboard
