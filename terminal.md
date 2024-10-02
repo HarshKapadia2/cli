@@ -631,6 +631,7 @@ Eg: `ls -al >> listings.txt` will append the output of command ls -al is re-dire
 
 -   [tmux introduction](https://missing.csail.mit.edu/2020/command-line/#terminal-multiplexers)
 -   [Cheat sheet](https://tmuxcheatsheet.com)
+-   [tmux Copy and Paste Methods With and Without the Mouse](https://www.baeldung.com/linux/tmux-copy-paste-keyboard-mouse)
 
 ## Reading file content
 

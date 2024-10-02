@@ -286,6 +286,8 @@
         -   [How to check if a variable is set in Bash (unset/unbound variable error)](https://stackoverflow.com/questions/3601515/how-to-check-if-a-variable-is-set-in-bash)
     -   [Get a sub-string based on index numbers (`${str:start_idx:substr_length}`)](https://www.baeldung.com/linux/bash-substring#3-using-bashs-substring-expansion)
     -   [Delete the last character of a string using string manipulation in shell script (`${var::-1}`)](https://unix.stackexchange.com/questions/144298/delete-the-last-character-of-a-string-using-string-manipulation-in-shell-script)
+    -   [See if you can use `${variable//search/replace}` instead.](https://www.shellcheck.net/wiki/SC2001)
+    -   [How to delete a substring using shell script](https://stackoverflow.com/questions/13570327/how-to-delete-a-substring-using-shell-script)
 
 > NOTE:
 >
