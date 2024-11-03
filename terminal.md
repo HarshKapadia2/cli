@@ -552,6 +552,8 @@ $ ln --symbolic /actual/file/location.ext /symlink/location.ext
 
 ## Redirecting output
 
+-   [Bash Redirections Cheat Sheet](https://catonmat.net/bash-redirections-cheat-sheet)
+
 ### Redirect to a file
 
 -   To redirect the output of a command to a file, use the `>` symbol.
@@ -564,11 +566,16 @@ Note that if `listings.txt` already had some data, then this will **overwrite** 
 
 Eg: `ls -al >> listings.txt` will append the output of command ls -al is re-directed to `listings.txt`.
 
+-   [Order of redirections](https://unix.stackexchange.com/a/176214)
+    -   There is a difference between `cmd 2>&1 > file.txt` and `cmd > file.txt 2>&1`.
+
 ### Redirect to another command
 
 -   Sometimes, it can be useful to use the output of one command as the input to another command. This can be achieved using **pipes**.
 -   A pipe is created using the pipe character (`|`).
 -   Eg: To display output of a directory listing one page at a time, use `ls -la | less`.
+-   [Creating temp file vs process substitution vs variable expansion?](https://unix.stackexchange.com/questions/92362/creating-temp-file-vs-process-substitution-vs-variable-expansion)
+    -   [Pseudo files for temporary data](https://unix.stackexchange.com/questions/63923/pseudo-files-for-temporary-data)
 -   Pipe parallelism
     -   [Does piping executes commands in parallel?](https://superuser.com/questions/1455438/does-piping-executes-commands-in-parallel)
     -   [Make sure not to read and write the same file in the same pipeline.](https://www.shellcheck.net/wiki/SC2094)
