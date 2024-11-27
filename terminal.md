@@ -814,7 +814,9 @@ $ command1 ; command2
     -   Speed: `sudo dmidecode -t memory | grep -i "configured memory speed:"`
     -   `free -h`
     -   [How to Determine the Number of RAM Slots in Use](https://www.baeldung.com/linux/ram-slots-in-use)
-    -   DIMMS per channel (DPC): `sudo dmidecode -t memory | grep "Bank Locator"`
+    -   DIMMS per channel (DPC)
+        -   See all channels: `sudo dmidecode -t memory | grep "Bank Locator"`
+        -   See channels and which ones are populated: `sudo dmidecode -t memory | grep -i -e "configured memory speed:" -e "bank locator:"`
     -   [How do I tell if my Memory is ECC or Non-ECC?](https://superuser.com/questions/893560/how-do-i-tell-if-my-memory-is-ecc-or-non-ecc)
 -   Storage (disk)
     -   `df -h`
