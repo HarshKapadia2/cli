@@ -89,6 +89,12 @@
         -   [How does cmd > /dev/null 2>&1 work?](https://stackoverflow.com/questions/16995425/how-does-cmd-dev-null-21-work)
         -   [Order of redirections](https://unix.stackexchange.com/a/176214)
             -   There is a difference between `cmd 2>&1 > file.txt` and `cmd > file.txt 2>&1`.
+        -   [what is the difference between `>&2` and `&>2`](https://unix.stackexchange.com/questions/443823/what-is-the-difference-between-2-and-2)
+        -   [Shell Redirection 101](https://medium.com/@benweidig/shell-redirection-101-cd2eb99c27df)
+        -   [Difference between `2>&1 > output.log` and `2>&1 | tee output.log`](https://unix.stackexchange.com/questions/20469/difference-between-21-output-log-and-21-tee-output-log)
+        -   [Redirection differences between `&>` `>&` and `2>&1`](https://unix.stackexchange.com/questions/176216/redirection-differences-between-and-21)
+        -   [What is the differences between `&>` and `2>&1`](https://askubuntu.com/questions/635065/what-is-the-differences-between-and-21)
+        -   [Creating temp file vs process substitution vs variable expansion?](https://unix.stackexchange.com/questions/92362/creating-temp-file-vs-process-substitution-vs-variable-expansion)
         -   [Using grep with pipe and ampersand to filter errors from find](https://askubuntu.com/questions/24953/using-grep-with-pipe-and-ampersand-to-filter-errors-from-find)
             -   `|&` is the shorthand of `2>&1 |`
         -   [More info](terminal.md#redirecting-output)

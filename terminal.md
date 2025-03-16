@@ -595,7 +595,7 @@ Eg: `ls -al >> listings.txt` will append the output of command ls -al is re-dire
 
 ### Vim
 
--   **Vi** editor wasn’t very user-friendly. **Vim** is a newer version, which stands for **Vi editor, Modified**.
+-   **Vi** editor wasn’t very user-friendly. **Vim** is a newer version, which stands for **Vi, Modified**.
 
     ```bash
     $ vim sample.txt
@@ -608,6 +608,7 @@ Eg: `ls -al >> listings.txt` will append the output of command ls -al is re-dire
     -   [More on Regular Expression](https://harshkapadia2.github.io/regex)
     -   NOTE: Vim will only replace the first occurrence of a string in a sentence by default. To change all occurrences, add the `g` option at the end. Eg: `:0,$s/old-text/new-text/g`
 -   [Getting Started with Vim: An Interactive Guide](https://scotch.io/tutorials/getting-started-with-vim-an-interactive-guide)
+-   [What's a quick way to comment/uncomment lines in Vim?](https://stackoverflow.com/questions/1676632/whats-a-quick-way-to-comment-uncomment-lines-in-vim)
 -   [Tips on Window Management in Vim](https://advancedweb.hu/tips-on-window-management-in-vim)
 -   [Using buffers, windows, and tabs efficiently in Vim](https://dev.to/iggredible/using-buffers-windows-and-tabs-efficiently-in-vim-56jc)
 -   [How to add text at the end of each line in Vim?](https://stackoverflow.com/questions/11303032/how-to-add-text-at-the-end-of-each-line-in-vim)
