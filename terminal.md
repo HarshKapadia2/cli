@@ -553,6 +553,7 @@ $ ln --symbolic /actual/file/location.ext /symlink/location.ext
 ## Redirecting output
 
 -   [Bash Redirections Cheat Sheet](https://catonmat.net/bash-redirections-cheat-sheet)
+-   Seacrch for 'output redirection' in [shell-scripting.md](shell-scripting.md).
 
 ### Redirect to a file
 
@@ -574,11 +575,22 @@ Eg: `ls -al >> listings.txt` will append the output of command ls -al is re-dire
 -   Sometimes, it can be useful to use the output of one command as the input to another command. This can be achieved using **pipes**.
 -   A pipe is created using the pipe character (`|`).
 -   Eg: To display output of a directory listing one page at a time, use `ls -la | less`.
+-   [Beej's Guide to Interprocess Communication (IPC): Pipes](https://beej.us/guide/bgipc/html/split/pipes.html)
 -   [Creating temp file vs process substitution vs variable expansion?](https://unix.stackexchange.com/questions/92362/creating-temp-file-vs-process-substitution-vs-variable-expansion)
     -   [Pseudo files for temporary data](https://unix.stackexchange.com/questions/63923/pseudo-files-for-temporary-data)
 -   Pipe parallelism
     -   [Does piping executes commands in parallel?](https://superuser.com/questions/1455438/does-piping-executes-commands-in-parallel)
     -   [Make sure not to read and write the same file in the same pipeline.](https://www.shellcheck.net/wiki/SC2094)
+-   Exit status capturing with pipes
+    -   [Pipe output and capture exit status in Bash](https://stackoverflow.com/questions/1221833/pipe-output-and-capture-exit-status-in-bash)
+    -   [The Exit Status of Piped Processes](https://www.baeldung.com/linux/exit-status-piped-processes)
+-   `SIGPIPE`, `EPIPE`, pipe fail and broken pipes
+    -   [What makes a Unix process die with Broken pipe?](https://unix.stackexchange.com/questions/84813/what-makes-a-unix-process-die-with-broken-pipe)
+    -   [How to suppress SIGPIPE in bash?](https://unix.stackexchange.com/questions/582844/how-to-suppress-sigpipe-in-bash)
+    -   [Why does SIGPIPE exist?](https://stackoverflow.com/questions/8369506/why-does-sigpipe-exist)
+    -   [Pipe Fail (141) when piping output into tee -- why?](https://unix.stackexchange.com/questions/274120/pipe-fail-141-when-piping-output-into-tee-why)
+    -   [Debugging sporadic 141 shell script errors](https://unix.stackexchange.com/questions/580117/debugging-sporadic-141-shell-script-errors)
+-   [Why pipes sometimes get "stuck": buffering](https://jvns.ca/blog/2024/11/29/why-pipes-get-stuck-buffering)
 
 ## Editing a file
 

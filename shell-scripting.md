@@ -97,6 +97,7 @@
         -   [Creating temp file vs process substitution vs variable expansion?](https://unix.stackexchange.com/questions/92362/creating-temp-file-vs-process-substitution-vs-variable-expansion)
         -   [Using grep with pipe and ampersand to filter errors from find](https://askubuntu.com/questions/24953/using-grep-with-pipe-and-ampersand-to-filter-errors-from-find)
             -   `|&` is the shorthand of `2>&1 |`
+        -   [Close File Descriptors in Bash](https://www.baeldung.com/linux/bash-close-file-descriptors)
         -   [More info](terminal.md#redirecting-output)
 
 -   User input
