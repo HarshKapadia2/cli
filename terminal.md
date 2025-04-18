@@ -545,6 +545,7 @@ $ mkdir -p public/css/summary public/html
 
 -   [What is Symbolic Links in Linux? How to Create Symbolic Links?](https://linuxhandbook.com/symbolic-link-linux/#things-to-keep-in-mind-about-symbolic-links)
 -   [What is the difference between a symbolic link and a hard link?](https://stackoverflow.com/questions/185899/what-is-the-difference-between-a-symbolic-link-and-a-hard-link)
+-   [What is the difference between `ln -s` and `mount --bind`?](https://askubuntu.com/questions/557733/what-is-the-difference-between-ln-s-and-mount-bind)
 
 ```bash
 $ ln --symbolic /actual/file/location.ext /symlink/location.ext
@@ -860,6 +861,7 @@ $ command1 ; command2
 
 -   `grep` or `g/re/p`: Global [Regular Expression](https://harshkapadia2.github.io/regex) Print
 -   [Origin of `grep`](https://www.youtube.com/watch?v=NTfOnGZUZDk)
+-   [What is the difference between grep, pgrep, egrep, fgrep?](https://superuser.com/questions/508881/what-is-the-difference-between-grep-pgrep-egrep-fgrep)
 
 -   To find the occurence of a string, use `grep "<string>" file_name.ext`
 
