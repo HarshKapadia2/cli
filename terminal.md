@@ -822,8 +822,12 @@ $ command1 ; command2
         -   `cat /etc/os-release`
     -   Kernel version: `uname -srm`
     -   [4 Useful Commands to Check Linux Version](https://www.howtouselinux.com/post/check-linux-version)
--   BIOS
-    -   `sudo dmidecode -t bios` ([More details](https://www.baeldung.com/linux/get-bios-data))
+-   BIOS/UEFI
+    -   Info
+        -   `sudo dmidecode -t bios` ([More details](https://www.baeldung.com/linux/get-bios-data))
+    -   Booting to BIOS/UEFI FW UI screen
+        -   From OS: `sudo systemctl reboot --firmware-setup`
+        -   From UEFI shell/command line: `reset -fwui`
 -   Memory (RAM) config
     -   Speed: `sudo dmidecode -t memory | grep -i "configured memory speed:"`
     -   `free -h`
