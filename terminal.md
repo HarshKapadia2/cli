@@ -840,6 +840,7 @@ $ command1 ; command2
     -   `df -h`
     -   `lsblk`
     -   `sudo fdisk -l`
+    -   `sudo lshw -class storage -class disk`
 -   Network
     -   List all interfaces: `ip a`
     -   Set interface up or down: `sudo ip link set <interface_name> <up_down>`
