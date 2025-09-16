@@ -839,6 +839,8 @@ $ command1 ; command2
 -   Storage (disk)
     -   `df -h`
     -   `lsblk`
+        -   `lsblk -o NAME,MODEL,SERIAL,SIZE --nodeps`
+        -   `lsblk -o NAME,MODEL,SERIAL,SIZE`
     -   `sudo fdisk -l`
     -   `sudo lshw -class storage -class disk`
 -   Network
