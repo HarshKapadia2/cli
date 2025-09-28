@@ -203,11 +203,12 @@ $ pwd
 /home/username
 ```
 
-### Clear screen & command history
+### Clear Screen and Command History
 
 -   Use `clear` or <kbd>Ctrl</kbd> + <kbd>L</kbd> to clear the screen of the cmd.
 -   Use `history` to view the last 500 commands executed on the terminal.
     -   [An Actionable Guide to The Linux History Command](https://www.redswitches.com/blog/linux-history-command/#Correct-Mistakes-in-the-Executed-Command)
+    -   [put history command onto command line without executing it](https://unix.stackexchange.com/questions/4079/put-history-command-onto-command-line-without-executing-it)
 
 ### Changing directories
 
