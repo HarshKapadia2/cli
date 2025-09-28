@@ -624,6 +624,8 @@ Eg: `ls -al >> listings.txt` will append the output of command ls -al is re-dire
 -   [What's a quick way to comment/uncomment lines in Vim?](https://stackoverflow.com/questions/1676632/whats-a-quick-way-to-comment-uncomment-lines-in-vim)
 -   [Tips on Window Management in Vim](https://advancedweb.hu/tips-on-window-management-in-vim)
 -   [Using buffers, windows, and tabs efficiently in Vim](https://dev.to/iggredible/using-buffers-windows-and-tabs-efficiently-in-vim-56jc)
+-   [Selecting text in Vim: (regular) visual mode, linewise visual mode and block visual mode](https://stackoverflow.com/questions/17890904/how-do-you-select-text-in-vim)
+-   [Insert the same characters across multiple lines](https://stackoverflow.com/a/34552140/11958552)
 -   [How to add text at the end of each line in Vim?](https://stackoverflow.com/questions/11303032/how-to-add-text-at-the-end-of-each-line-in-vim)
 -   [How can I use Vim as a hex editor?](https://vi.stackexchange.com/questions/2232/how-can-i-use-vim-as-a-hex-editor)
 -   Plugins
@@ -654,6 +656,8 @@ Eg: `ls -al >> listings.txt` will append the output of command ls -al is re-dire
 -   [Cheat sheet](https://tmuxcheatsheet.com)
 -   [tmux Copy and Paste Methods With and Without the Mouse](https://www.baeldung.com/linux/tmux-copy-paste-keyboard-mouse)
 -   [tmux: Sessions, windows and panes](https://arcolinux.com/everthing-you-need-to-know-about-tmux-panes)
+-   [How do I terminate a window in tmux?](https://stackoverflow.com/questions/7771557/how-do-i-terminate-a-window-in-tmux)
+-   [How to close panes in tmux?](https://tmuxai.dev/tmux-close-pane)
 
 ## Reading file content
 
