@@ -161,6 +161,11 @@ pwd: pwd [-LP]
   cannot be read.
 ```
 
+### Command Search
+
+-   [Mastering Linux Reverse Incremental Search](https://linuxvox.com/blog/linux-reverseisearch)
+-   [How to cycle through reverse-i-search in Bash?](https://unix.stackexchange.com/questions/73498/how-to-cycle-through-reverse-i-search-in-bash)
+
 ### Variables
 
 Syntax: `${var_name}` or `$var_name`
