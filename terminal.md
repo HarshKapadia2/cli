@@ -854,6 +854,7 @@ $ command1 ; command2
         -   `lsblk -o NAME,MODEL,SERIAL,SIZE`
     -   `sudo fdisk -l`
     -   `sudo lshw -class storage -class disk`
+    -   `sudo blkid`
 -   Network
     -   List all interfaces: `ip a`
     -   Set interface up or down: `sudo ip link set <interface_name> <up_down>`
