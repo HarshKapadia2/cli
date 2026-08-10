@@ -143,6 +143,8 @@ rm -r project
 ### Command Help
 
 -   `man <command>` is used to display the user manual of any command that we can run on the terminal. It provides a detailed view of the command. eg: `man ls`.
+    -   `man -k <string>` will search man pages' names and their short descriptions for any [RegEx](https://harshkapadia2.github.io/regex) matches for the `<string>`.
+        -   This command helps in searching for a man page when the exact man page number is not known, for example, `man 8 pidof`.
 -   `help` command provides documentation for builtin commands.
 
 ```bash
